@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Api_Pdx_Db_V2.props" />
+</Project>

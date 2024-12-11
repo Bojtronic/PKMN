@@ -1,0 +1,22 @@
+﻿@page
+
+@model PoyectoPokedexApi.Pages.Pokemon.IndexModel
+@{
+}
+
+<h1>Detalles del Pokémon</h1>
+@if (Model.pokemon != null)
+{
+    <div>
+        <h2>@Model.pokemon.name</h2>
+        <img src="@Model.pokemon.sprites?.front_default" alt="@Model.pokemon.name" />
+        <p>ID: @Model.pokemon.id</p>
+        <p>Altura: @Model.pokemon.height</p>
+        <p>Peso: @Model.pokemon.weight</p>
+        <!-- Agrega más propiedades según lo necesites -->
+    </div>
+}
+else
+{
+    <p>No se pudo obtener la información del Pokémon.</p>
+}
