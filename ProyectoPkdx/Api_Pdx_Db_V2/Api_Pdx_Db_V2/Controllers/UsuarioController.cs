@@ -1,7 +1,9 @@
 ﻿using Api_Pdx_Db_V2.Data;
 using Api_Pdx_Db_V2.Models;
 using Microsoft.AspNetCore.Mvc;
-using Org.BouncyCastle.Crypto.Generators;
+using Microsoft.EntityFrameworkCore;  // Necesario para operaciones asincrónicas
+using BCrypt.Net;
+using System.Threading.Tasks;
 
 namespace Api_Pdx_Db_V2.Controllers
 {
@@ -10,103 +12,102 @@ namespace Api_Pdx_Db_V2.Controllers
     public class UsuarioController : ControllerBase
     {
         private readonly DbConexionContext _conexionContext;
+
         public UsuarioController(DbConexionContext conexionContext)
         {
             _conexionContext = conexionContext;
         }
 
-       // este es de prueba apara ver si trae los datos no utilizar en produccion dado
-
+        // Obtener todos los usuarios
         [HttpGet]
-        public ActionResult<IEnumerable<UsuarioModel>> GetUsuario()
+        public async Task<ActionResult<IEnumerable<UsuarioModel>>> GetUsuario()
         {
-            return Ok(_conexionContext.usuario.ToList());
+            var usuarios = await _conexionContext.usuario.ToListAsync();
+            return Ok(usuarios);
         }
 
         // Crear un nuevo usuario
         [HttpPost("Crear Usuario")]
-        public ActionResult<UsuarioModel> CrearUsuario([FromBody] UsuarioModel nuevoUsuario)
+        public async Task<ActionResult<UsuarioModel>> CrearUsuario([FromBody] UsuarioModel nuevoUsuario)
         {
-            //Agrega el pass encriptado
+            if (nuevoUsuario == null || string.IsNullOrWhiteSpace(nuevoUsuario.UserName) || string.IsNullOrWhiteSpace(nuevoUsuario.Pass))
+            {
+                return BadRequest("Los campos 'UserName' y 'Password' son obligatorios.");
+            }
+
+            // Encriptar la contraseña
             nuevoUsuario.Pass = BCrypt.Net.BCrypt.HashPassword(nuevoUsuario.Pass);
             _conexionContext.usuario.Add(nuevoUsuario);
-            _conexionContext.SaveChanges();
-            
+            await _conexionContext.SaveChangesAsync();
 
-            //Asigna rol sario 
-            var rol = _conexionContext.rol.FirstOrDefault(r => r.Descripcion == "User");
+            // Asignar rol al usuario
+            var rol = await _conexionContext.rol.FirstOrDefaultAsync(r => r.Descripcion == "User");
 
             if (rol != null)
             {
                 // Crear la relación en la tabla Usuario_Rol
                 var usuarioRol = new UsuarioRolModel
                 {
-                    IdUsuario = nuevoUsuario.Id, // Asignar el ID del nuevo usuario
-                    IdRol = rol.Id // Asignar el ID del rol 'User'
+                    IdUsuario = nuevoUsuario.Id,
+                    IdRol = rol.Id
                 };
 
-                // Agregar la relación a la tabla Usuario_Rol
                 _conexionContext.usuario_rol.Add(usuarioRol);
-               
+                await _conexionContext.SaveChangesAsync();
 
-                return Ok("Usuario y rol asignado exitosamente.");
-            }
-            else
-            {
-                return BadRequest("Rol 'User' no encontrado.");
+                return Ok(new { mensaje = "Usuario y rol asignado exitosamente." });
             }
 
-          
-        } 
+            return BadRequest("Rol 'User' no encontrado.");
+        }
 
         // Obtener un usuario por ID
         [HttpGet("Usuario/{id}")]
-        public ActionResult<UsuarioModel> GetUsuarioPorId(int id)
+        public async Task<ActionResult<UsuarioModel>> GetUsuarioPorId(int id)
         {
-            var usuario = _conexionContext.usuario.Find(id);
+            var usuario = await _conexionContext.usuario.FindAsync(id);
 
             if (usuario == null)
             {
-                return NotFound("Usuario no encontrado.");
+                return NotFound(new { mensaje = "Usuario no encontrado." });
             }
+
             return Ok(usuario);
         }
 
         // Eliminar un usuario
         [HttpDelete("Eliminar/{id}")]
-        public ActionResult EliminarUsuario(int id)
+        public async Task<ActionResult> EliminarUsuario(int id)
         {
-            var usuario = _conexionContext.usuario.FirstOrDefault(u => u.Id == id);
+            var usuario = await _conexionContext.usuario.FirstOrDefaultAsync(u => u.Id == id);
 
             if (usuario == null)
             {
-                return NotFound("Usuario no encontrado.");
+                return NotFound(new { mensaje = "Usuario no encontrado." });
             }
-            
+
             _conexionContext.usuario.Remove(usuario);
+            await _conexionContext.SaveChangesAsync();
 
-            _conexionContext.SaveChanges();
-
-            return Ok("Usuario eliminado exitosamente.");
+            return Ok(new { mensaje = "Usuario eliminado exitosamente." });
         }
 
         // Login de Usuario
         [HttpPost("login")]
-        public ActionResult Login([FromBody] LoginModel login)
+        public async Task<ActionResult> Login([FromBody] LoginModel login)
         {
-            // Buscar usuario por UserName
-            var usuario = _conexionContext.usuario.FirstOrDefault(u => u.UserName == login.UserName);
-
-            if (usuario == null)
+            if (login == null || string.IsNullOrWhiteSpace(login.UserName) || string.IsNullOrWhiteSpace(login.Password))
             {
-                return Unauthorized("Usuario o contraseña incorrectos.");
+                return BadRequest(new { mensaje = "El nombre de usuario y la contraseña son requeridos." });
             }
 
-            // Verificar contraseña (hashed)
-            if (!BCrypt.Net.BCrypt.Verify(login.Password, usuario.Pass))
+            var usuario = await _conexionContext.usuario.FirstOrDefaultAsync(u => u.UserName == login.UserName);
+
+            if (usuario == null || !BCrypt.Net.BCrypt.Verify(login.Password, usuario.Pass))
             {
-                return Unauthorized("Usuario o contraseña incorrectos.");
+                return Unauthorized(new { mensaje = "Usuario o contraseña incorrectos." });
             }
+
             var datosUsuario = new
             {
                 usuario.Id,
@@ -114,10 +115,7 @@ namespace Api_Pdx_Db_V2.Controllers
                 usuario.Nombre
             };
 
-            //retorno usuario 
-
             return Ok(new { mensaje = "Login exitoso", usuario = datosUsuario });
         }
-
     }
 }

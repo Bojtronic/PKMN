@@ -20,7 +20,7 @@ CREATE TABLE usuario (
     Id INT AUTO_INCREMENT PRIMARY KEY,
     Nombre VARCHAR(100) NOT NULL,
     UserName VARCHAR(100) NOT NULL UNIQUE,
-    Password VARCHAR(1024) NOT NULL
+    Pass VARCHAR(1024) NOT NULL
 );
 
 -- Crear tabla Usuario_Rol
@@ -70,7 +70,7 @@ CREATE TABLE usuario_pocket (
 INSERT INTO rol (Descripcion) VALUES ('Admin'), ('User'), ('Guest');
 
 -- Insertar usuarios
-INSERT INTO usuario (Nombre, UserName, Password) VALUES ('Administrador', 'Admin', 'pass');
+INSERT INTO usuario (Nombre, UserName, Pass) VALUES ('Administrador', 'Admin', 'pass');
 
 -- Nota: insertar filas en Usuario_Rol después de que existan registros en las tablas Usuario y Rol.
 INSERT INTO usuario_rol (IdRol, IdUsuario) VALUES (1, 1);
