@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Manuel\\Documents\\Brete\\JuanPa\\ProyectoPkdx\\ProyectoPkdx\\PoyectoPokedexApi\\PoyectoPokedexApi\\PoyectoPokedexApi.csproj": {}
+    "C:\\Users\\Manuel\\Documents\\Brete\\JuanPa\\PROY_U\\repo\\PKMN\\PoyectoPokedexApi\\PoyectoPokedexApi\\PoyectoPokedexApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Manuel\\Documents\\Brete\\JuanPa\\ProyectoPkdx\\ProyectoPkdx\\PoyectoPokedexApi\\PoyectoPokedexApi\\PoyectoPokedexApi.csproj": {
+    "C:\\Users\\Manuel\\Documents\\Brete\\JuanPa\\PROY_U\\repo\\PKMN\\PoyectoPokedexApi\\PoyectoPokedexApi\\PoyectoPokedexApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Manuel\\Documents\\Brete\\JuanPa\\ProyectoPkdx\\ProyectoPkdx\\PoyectoPokedexApi\\PoyectoPokedexApi\\PoyectoPokedexApi.csproj",
+        "projectUniqueName": "C:\\Users\\Manuel\\Documents\\Brete\\JuanPa\\PROY_U\\repo\\PKMN\\PoyectoPokedexApi\\PoyectoPokedexApi\\PoyectoPokedexApi.csproj",
         "projectName": "PoyectoPokedexApi",
-        "projectPath": "C:\\Users\\Manuel\\Documents\\Brete\\JuanPa\\ProyectoPkdx\\ProyectoPkdx\\PoyectoPokedexApi\\PoyectoPokedexApi\\PoyectoPokedexApi.csproj",
+        "projectPath": "C:\\Users\\Manuel\\Documents\\Brete\\JuanPa\\PROY_U\\repo\\PKMN\\PoyectoPokedexApi\\PoyectoPokedexApi\\PoyectoPokedexApi.csproj",
         "packagesPath": "C:\\Users\\Manuel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Manuel\\Documents\\Brete\\JuanPa\\ProyectoPkdx\\ProyectoPkdx\\PoyectoPokedexApi\\PoyectoPokedexApi\\obj\\",
+        "outputPath": "C:\\Users\\Manuel\\Documents\\Brete\\JuanPa\\PROY_U\\repo\\PKMN\\PoyectoPokedexApi\\PoyectoPokedexApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -9,65 +9,65 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = PoyectoPokedexApi
 build_property.RootNamespace = PoyectoPokedexApi
-build_property.ProjectDir = C:\Users\Manuel\Documents\Brete\JuanPa\ProyectoPkdx\ProyectoPkdx\PoyectoPokedexApi\PoyectoPokedexApi\
+build_property.ProjectDir = C:\Users\Manuel\Documents\Brete\JuanPa\PROY_U\repo\PKMN\PoyectoPokedexApi\PoyectoPokedexApi\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Manuel\Documents\Brete\JuanPa\ProyectoPkdx\ProyectoPkdx\PoyectoPokedexApi\PoyectoPokedexApi
+build_property.MSBuildProjectDirectory = C:\Users\Manuel\Documents\Brete\JuanPa\PROY_U\repo\PKMN\PoyectoPokedexApi\PoyectoPokedexApi
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/Manuel/Documents/Brete/JuanPa/ProyectoPkdx/ProyectoPkdx/PoyectoPokedexApi/PoyectoPokedexApi/Pages/Enfermeria/Index.cshtml]
+[C:/Users/Manuel/Documents/Brete/JuanPa/PROY_U/repo/PKMN/PoyectoPokedexApi/PoyectoPokedexApi/Pages/Enfermeria/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRW5mZXJtZXJpYVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Manuel/Documents/Brete/JuanPa/ProyectoPkdx/ProyectoPkdx/PoyectoPokedexApi/PoyectoPokedexApi/Pages/Error.cshtml]
+[C:/Users/Manuel/Documents/Brete/JuanPa/PROY_U/repo/PKMN/PoyectoPokedexApi/PoyectoPokedexApi/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Manuel/Documents/Brete/JuanPa/ProyectoPkdx/ProyectoPkdx/PoyectoPokedexApi/PoyectoPokedexApi/Pages/Index.cshtml]
+[C:/Users/Manuel/Documents/Brete/JuanPa/PROY_U/repo/PKMN/PoyectoPokedexApi/PoyectoPokedexApi/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Manuel/Documents/Brete/JuanPa/ProyectoPkdx/ProyectoPkdx/PoyectoPokedexApi/PoyectoPokedexApi/Pages/Pokemon/Index.cshtml]
+[C:/Users/Manuel/Documents/Brete/JuanPa/PROY_U/repo/PKMN/PoyectoPokedexApi/PoyectoPokedexApi/Pages/Pokemon/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUG9rZW1vblxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Manuel/Documents/Brete/JuanPa/ProyectoPkdx/ProyectoPkdx/PoyectoPokedexApi/PoyectoPokedexApi/Pages/Pokemon/Login.cshtml]
+[C:/Users/Manuel/Documents/Brete/JuanPa/PROY_U/repo/PKMN/PoyectoPokedexApi/PoyectoPokedexApi/Pages/Pokemon/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUG9rZW1vblxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Manuel/Documents/Brete/JuanPa/ProyectoPkdx/ProyectoPkdx/PoyectoPokedexApi/PoyectoPokedexApi/Pages/Pokemon/Registro.cshtml]
+[C:/Users/Manuel/Documents/Brete/JuanPa/PROY_U/repo/PKMN/PoyectoPokedexApi/PoyectoPokedexApi/Pages/Pokemon/Registro.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUG9rZW1vblxSZWdpc3Ryby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Manuel/Documents/Brete/JuanPa/ProyectoPkdx/ProyectoPkdx/PoyectoPokedexApi/PoyectoPokedexApi/Pages/Pokemon/User.cshtml]
+[C:/Users/Manuel/Documents/Brete/JuanPa/PROY_U/repo/PKMN/PoyectoPokedexApi/PoyectoPokedexApi/Pages/Pokemon/User.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUG9rZW1vblxVc2VyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Manuel/Documents/Brete/JuanPa/ProyectoPkdx/ProyectoPkdx/PoyectoPokedexApi/PoyectoPokedexApi/Pages/Pokemon/Usuarios.cshtml]
+[C:/Users/Manuel/Documents/Brete/JuanPa/PROY_U/repo/PKMN/PoyectoPokedexApi/PoyectoPokedexApi/Pages/Pokemon/Usuarios.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUG9rZW1vblxVc3Vhcmlvcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Manuel/Documents/Brete/JuanPa/ProyectoPkdx/ProyectoPkdx/PoyectoPokedexApi/PoyectoPokedexApi/Pages/Privacy.cshtml]
+[C:/Users/Manuel/Documents/Brete/JuanPa/PROY_U/repo/PKMN/PoyectoPokedexApi/PoyectoPokedexApi/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Manuel/Documents/Brete/JuanPa/ProyectoPkdx/ProyectoPkdx/PoyectoPokedexApi/PoyectoPokedexApi/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Manuel/Documents/Brete/JuanPa/PROY_U/repo/PKMN/PoyectoPokedexApi/PoyectoPokedexApi/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Manuel/Documents/Brete/JuanPa/ProyectoPkdx/ProyectoPkdx/PoyectoPokedexApi/PoyectoPokedexApi/Pages/_ViewImports.cshtml]
+[C:/Users/Manuel/Documents/Brete/JuanPa/PROY_U/repo/PKMN/PoyectoPokedexApi/PoyectoPokedexApi/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Manuel/Documents/Brete/JuanPa/ProyectoPkdx/ProyectoPkdx/PoyectoPokedexApi/PoyectoPokedexApi/Pages/_ViewStart.cshtml]
+[C:/Users/Manuel/Documents/Brete/JuanPa/PROY_U/repo/PKMN/PoyectoPokedexApi/PoyectoPokedexApi/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Manuel/Documents/Brete/JuanPa/ProyectoPkdx/ProyectoPkdx/PoyectoPokedexApi/PoyectoPokedexApi/Pages/Shared/_Layout.cshtml]
+[C:/Users/Manuel/Documents/Brete/JuanPa/PROY_U/repo/PKMN/PoyectoPokedexApi/PoyectoPokedexApi/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-vqz629u5di

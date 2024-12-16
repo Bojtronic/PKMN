@@ -1,76 +1,111 @@
-DROP DATABASE PokeDexDb;
-
-create schema PokeDexDb;
+-- Eliminar la base de datos existente y crearla nuevamente
+DROP DATABASE IF EXISTS PokeDexDb;
+CREATE DATABASE PokeDexDb;
 USE PokeDexDb;
--- Utilisar solo  Id para todas las tablas dado que genera problemas al llamar en Vs Code 
-CREATE TABLE rol(
-	Id int PRIMARY KEY AUTO_INCREMENT,
+
+-- Crear las tablas principales
+CREATE TABLE Rol (
+    Id INT PRIMARY KEY AUTO_INCREMENT,
     Descripcion VARCHAR(50)
 );
 
-INSERT INTO Rol (Descripcion) VALUES ('Admin');
-INSERT INTO Rol (Descripcion) VALUES ('User');
-INSERT INTO Rol (Descripcion) VALUES ('Guest');
+CREATE TABLE Usuario (
+    Id INT PRIMARY KEY AUTO_INCREMENT,
+    Nombre VARCHAR(100),
+    UserName VARCHAR(100),
+    Pass VARCHAR(1024)
+) AUTO_INCREMENT = 1000;
 
-create table Usuario(
-	Id int primary key auto_increment,
-    Nombre varchar(100),
-    UserName varchar(100),
-    Pass varchar(1024)
-) auto_increment = 1000;  -- Para aumentar a partir de 1000
-insert into usuario (Nombre,UserName,Pass) values ('Administrador','Admin','pass');
-
-create table Usuario_Rol(
-	Id int PRIMARY KEY  AUTO_INCREMENT,
-    IdRol int,
-    IdUsuario int
+CREATE TABLE Usuario_Rol (
+    Id INT PRIMARY KEY AUTO_INCREMENT,
+    IdRol INT,
+    IdUsuario INT
 );
-alter table usuario_rol add constraint foreign key fk_IdRol(IdRol) references rol (Id);
--- para que se borre automaticamente al borrar un usuario 
-ALTER TABLE usuario_rol ADD CONSTRAINT fk_IdUsuario FOREIGN KEY (IdUsuario) REFERENCES Usuario(Id) ON DELETE CASCADE;
--- alter table usuario_rol drop constraint fk_IdUsuario;
 
-insert into Usuario_Rol (IdRol,IdUsuario) values (1,1000);
+CREATE TABLE Estado (
+    Id INT PRIMARY KEY,
+    Estado VARCHAR(50)
+);
 
-create table estado (
- Id int primary key,
- Estado varchar(50)
- );
- 
-insert into estado values (1, 'Activo');
-insert into estado values (2, 'Poket');
-insert into estado values (3, 'Debilitado');
-
-
-CREATE TABLE usuario_pkm (
-    Id INT AUTO_INCREMENT PRIMARY KEY,
+CREATE TABLE Usuario_Pkm (
+    Id INT PRIMARY KEY AUTO_INCREMENT,
     IdUsuario INT,
-    pkm_id INT,
-    nombre VARCHAR(100),
-    estado int,
-    CONSTRAINT fk_usr_Pkm FOREIGN KEY (IdUsuario) 
-    REFERENCES Usuario(Id) ON DELETE CASCADE,
-    constraint fk_estado foreign key (estado) references estado (Id)
+    Pkm_Id INT,
+    Nombre VARCHAR(100),
+    Estado INT
 );
-CREATE TABLE usuario_pocket (
-    id INT AUTO_INCREMENT PRIMARY KEY,
+
+CREATE TABLE Usuario_Pocket (
+    Id INT PRIMARY KEY AUTO_INCREMENT,
     IdUsuario INT,
-    pkm_Id1 INT,
-    pkm_Id2 INT,
-    pkm_Id3 INT,
-    CONSTRAINT fk_usr_pkt FOREIGN KEY (idUsuario) REFERENCES usuario(Id) ON DELETE CASCADE,
-    CONSTRAINT fk_usr_pkt_pkm1 FOREIGN KEY (pkm_Id1) REFERENCES usuario_pkm(Id) ON DELETE CASCADE,
-    CONSTRAINT fk_usr_pkt_pkm2 FOREIGN KEY (pkm_Id2) REFERENCES usuario_pkm(Id) ON DELETE CASCADE,
-    CONSTRAINT fk_usr_pkt_pkm3 FOREIGN KEY (pkm_Id3) REFERENCES usuario_pkm(Id) ON DELETE CASCADE
+    Pkm_Id1 INT,
+    Pkm_Id2 INT,
+    Pkm_Id3 INT
 );
 
+CREATE TABLE Enfermeria (
+    Id INT PRIMARY KEY AUTO_INCREMENT,
+    IdUsuario INT NOT NULL,
+    IdUsuPkm INT NOT NULL,
+    Descripcion VARCHAR(255) NOT NULL,
+    Fecha DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
 
-CREATE TRIGGER after_usuario_insert AFTER INSERT ON usuario FOR EACH ROW BEGIN INSERT INTO usuario_rol (IdRol, IdUsuario) VALUES (2, NEW.Id); END;
-CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `vista_usuarios_roles`  AS SELECT `u`.`Nombre` AS `Nombre`, `u`.`UserName` AS `UserName`, `r`.`Descripcion` AS `Descripcion`, `ur`.`IdRol` AS `IdRol` FROM ((`usuario` `u` join `usuario_rol` `ur` on((`u`.`Id` = `ur`.`IdUsuario`))) join `rol` `r` on((`ur`.`IdRol` = `r`.`Id`))) ;
+-- Agregar llaves foráneas después de la creación de las tablas
+ALTER TABLE Usuario_Rol
+ADD CONSTRAINT fk_IdRol FOREIGN KEY (IdRol) REFERENCES Rol(Id),
+ADD CONSTRAINT fk_IdUsuario FOREIGN KEY (IdUsuario) REFERENCES Usuario(Id) ON DELETE CASCADE;
+
+ALTER TABLE Usuario_Pkm
+ADD CONSTRAINT fk_usr_Pkm FOREIGN KEY (IdUsuario) REFERENCES Usuario(Id) ON DELETE CASCADE,
+ADD CONSTRAINT fk_estado FOREIGN KEY (Estado) REFERENCES Estado(Id);
+
+ALTER TABLE Usuario_Pocket
+ADD CONSTRAINT fk_usr_pkt FOREIGN KEY (IdUsuario) REFERENCES Usuario(Id) ON DELETE CASCADE,
+ADD CONSTRAINT fk_usr_pkt_pkm1 FOREIGN KEY (Pkm_Id1) REFERENCES Usuario_Pkm(Id) ON DELETE CASCADE,
+ADD CONSTRAINT fk_usr_pkt_pkm2 FOREIGN KEY (Pkm_Id2) REFERENCES Usuario_Pkm(Id) ON DELETE CASCADE,
+ADD CONSTRAINT fk_usr_pkt_pkm3 FOREIGN KEY (Pkm_Id3) REFERENCES Usuario_Pkm(Id) ON DELETE CASCADE;
+
+-- Agregar las llaves foráneas
+ALTER TABLE Enfermeria
+ADD CONSTRAINT fk_enfermeria_usuario FOREIGN KEY (IdUsuario) REFERENCES Usuario(Id) ON DELETE CASCADE,
+ADD CONSTRAINT fk_enfermeria_usupkm FOREIGN KEY (IdUsuPkm) REFERENCES Usuario_Pkm(Id) ON DELETE CASCADE;-- Agregar las llaves foráneas
+ALTER TABLE Enfermeria
+ADD CONSTRAINT fk_enfermeria_usuario FOREIGN KEY (IdUsuario) REFERENCES Usuario(Id) ON DELETE CASCADE,
+ADD CONSTRAINT fk_enfermeria_usupkm FOREIGN KEY (IdUsuPkm) REFERENCES Usuario_Pkm(Id) ON DELETE CASCADE;
 
 
 
+-- Insertar datos iniciales en las tablas
+INSERT INTO Rol (Descripcion) VALUES ('Admin'), ('User'), ('Guest');
+INSERT INTO Usuario (Nombre, UserName, Pass) VALUES ('Administrador', 'Admin', 'pass');
+INSERT INTO Usuario_Rol (IdRol, IdUsuario) VALUES (1, 1000);
 
+INSERT INTO Estado VALUES 
+(1, 'Activo'),
+(2, 'Poket'),
+(3, 'Debilitado');
 
+-- Crear TRIGGERS y VIEWS
+DELIMITER //
+CREATE TRIGGER after_usuario_insert
+AFTER INSERT ON Usuario
+FOR EACH ROW
+BEGIN
+    INSERT INTO Usuario_Rol (IdRol, IdUsuario) VALUES (2, NEW.Id);
+END;
+//
+DELIMITER ;
+
+CREATE VIEW vista_usuarios_roles AS
+SELECT 
+    u.Nombre AS Nombre, 
+    u.UserName AS UserName, 
+    r.Descripcion AS Descripcion, 
+    ur.IdRol AS IdRol
+FROM 
+    Usuario u
+    JOIN Usuario_Rol ur ON u.Id = ur.IdUsuario
+    JOIN Rol r ON ur.IdRol = r.Id;
 
 

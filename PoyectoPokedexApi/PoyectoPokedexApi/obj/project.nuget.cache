@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LQV+97PM5Ic=",
+  "dgSpecHash": "eeH0P3J/tSQ=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Manuel\\Documents\\Brete\\JuanPa\\ProyectoPkdx\\ProyectoPkdx\\PoyectoPokedexApi\\PoyectoPokedexApi\\PoyectoPokedexApi.csproj",
+  "projectFilePath": "C:\\Users\\Manuel\\Documents\\Brete\\JuanPa\\PROY_U\\repo\\PKMN\\PoyectoPokedexApi\\PoyectoPokedexApi\\PoyectoPokedexApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Manuel\\.nuget\\packages\\microsoft.entityframeworkcore\\9.0.0\\microsoft.entityframeworkcore.9.0.0.nupkg.sha512",
     "C:\\Users\\Manuel\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\9.0.0\\microsoft.entityframeworkcore.abstractions.9.0.0.nupkg.sha512",

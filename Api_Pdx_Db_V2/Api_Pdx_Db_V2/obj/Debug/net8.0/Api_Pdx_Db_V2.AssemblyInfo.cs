@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Api_Pdx_Db_V2")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+18b5371b7361e1a9f2fdb3504c9fcb99d20acf30")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1f3f6f81bbf58e2c4cc5edaf022c7a4219997154")]
 [assembly: System.Reflection.AssemblyProductAttribute("Api_Pdx_Db_V2")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Api_Pdx_Db_V2")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
