@@ -9,14 +9,19 @@
     <div class="col-md-7">
         <form method="post">
             <div class="form-group my-2">
-                <label asp-for="Login.UserName" class="control-label"></label>
-                <input asp-for="Login.UserName" class="form-control" />
-                <span asp-validation-for="Login.UserName" class="text-danger"></span>
+                <label asp-for="usuario.Nombre" class="control-label">Nombre</label>
+                <input asp-for="usuario.Nombre" class="form-control" />
+                <span asp-validation-for="usuario.Nombre" class="text-danger"></span>
             </div>
             <div class="form-group my-2">
-                <label asp-for="Login.Password" class="control-label"></label>
-                <input asp-for="Login.Password" class="form-control" type="password" />
-                <span asp-validation-for="Login.Password" class="text-danger"></span>
+                <label asp-for="usuario.UserName" class="control-label">Usuario</label>
+                <input asp-for="usuario.UserName" class="form-control" />
+                <span asp-validation-for="usuario.UserName" class="text-danger"></span>
+            </div>
+            <div class="form-group my-2">
+                <label asp-for="usuario.Pass" class="control-label">Contraseña</label>
+                <input asp-for="usuario.Pass" class="form-control" type="password" />
+                <span asp-validation-for="usuario.Pass" class="text-danger"></span>
             </div>
 
             <div class="form-group my-2">
@@ -26,9 +31,9 @@
     </div>
 </div>
 
-@if (!string.IsNullOrEmpty(Model.MensajeLogin))
+@if (!string.IsNullOrEmpty(Model.MensajeRegistro))
 {
-    <div class="alert alert-info">@Model.MensajeLogin</div>
+    <div class="alert alert-info">@Model.MensajeRegistro</div>
 }
 
 @section Scripts {

@@ -399,7 +399,7 @@
         }
       }
     },
-    "/Api_Pdx_DbV2/Usuario/Crear Usuario": {
+    "/Api_Pdx_DbV2/Usuario/CrearUsuario": {
       "post": {
         "tags": [
           "Usuario"

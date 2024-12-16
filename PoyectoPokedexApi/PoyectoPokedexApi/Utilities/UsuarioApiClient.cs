@@ -171,7 +171,7 @@ namespace PoyectoPokedexApi.Utilities
 
         public async Task<bool> CrearUsuarioAsync(CreateModel nuevoUsuario)
         {
-            var url = "https://localhost:7068/Api_Pdx_DbV2/Usuario/Crear Usuario";
+            var url = "https://localhost:7068/Api_Pdx_DbV2/Usuario/CrearUsuario";
 
             // Serializamos el objeto nuevoUsuario en formato JSON
             var content = new StringContent(JsonConvert.SerializeObject(nuevoUsuario), Encoding.UTF8, "application/json");

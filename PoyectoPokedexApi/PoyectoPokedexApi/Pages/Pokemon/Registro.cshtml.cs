@@ -10,7 +10,7 @@ namespace PoyectoPokedexApi.Pages.Pokemon
         private readonly UsuarioApiClient _usuarioApiClient;
 
         [BindProperty]
-        public LogModel Login { get; set; }
+        public UsuarioModel usuario { get; set; }
 
         public CreateModel nuevoUsuario { get; set; }
         public RegistroModel(UsuarioApiClient usuarioApiClient)
@@ -18,7 +18,7 @@ namespace PoyectoPokedexApi.Pages.Pokemon
             _usuarioApiClient = usuarioApiClient;
             
         }
-         public string MensajeLogin { get; private set; }
+         public string MensajeRegistro { get; private set; }
 
         public async Task<IActionResult> OnPostAsync()
         {
@@ -29,29 +29,29 @@ namespace PoyectoPokedexApi.Pages.Pokemon
 
             try
             {
-                // Crear un nuevo usuario con las credenciales proporcionadas
+                // Crear un nuevo usuario con las credenciales que ingresa el usuario
                 nuevoUsuario = new CreateModel
                 {
                     Id = 0,
-                    Nombre = Login.UserName, // Asumiendo que el nombre es el mismo que el nombre de usuario
-                    UserName = Login.UserName,
-                    Pass = Login.Password // Asumiendo que la clase UsuarioModel tiene una propiedad Pass
+                    Nombre = usuario.UserName, 
+                    UserName = usuario.UserName,
+                    Pass = usuario.Pass 
                 };
 
                 bool resultado = await _usuarioApiClient.CrearUsuarioAsync(nuevoUsuario);
                 if (resultado)
                 {
-                    MensajeLogin = "Usuario creado exitosamente. Por favor, inicie sesión.";
+                    MensajeRegistro = "Usuario creado exitosamente. Por favor, inicie sesión.";
                     return RedirectToPage("/Pokemon/Login"); // Redirigir a la página de inicio de sesión
                 }
                 else
                 {
-                    MensajeLogin = "Error al crear el usuario.";
+                    MensajeRegistro = "Error al crear el usuario.";
                 }
             }
             catch (Exception ex)
             {
-                MensajeLogin = $"Error al intentar crear usuario: {ex.Message}";
+                MensajeRegistro = $"Error al intentar crear usuario: {ex.Message}";
             }
 
             return Page();
@@ -59,3 +59,4 @@ namespace PoyectoPokedexApi.Pages.Pokemon
 
     }
 }
+

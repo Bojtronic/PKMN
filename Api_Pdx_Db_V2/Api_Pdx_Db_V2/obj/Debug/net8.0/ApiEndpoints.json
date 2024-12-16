@@ -232,7 +232,7 @@
   {
     "ContainingType": "Api_Pdx_Db_V2.Controllers.UsuarioController",
     "Method": "CrearUsuario",
-    "RelativePath": "Api_Pdx_DbV2/Usuario/Crear Usuario",
+    "RelativePath": "Api_Pdx_DbV2/Usuario/CrearUsuario",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
