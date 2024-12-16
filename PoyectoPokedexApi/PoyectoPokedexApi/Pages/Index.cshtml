@@ -1,0 +1,57 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+    
+}
+<div class="container d-flex justify-content-center align-items-center" style="max-width: 900px; height: 80vh;">
+    <div class="row">
+        <div class="col d-flex justify-content-center align-items-center">
+            <div>
+                <h6>DEMUESTRA SI</h6>
+                <h1>ERES UN</h1>
+                <h1>POKEMASTER</h1>
+                <br />
+                
+                <p>¡Has tu equipo y Lucha con otros entrenadores!</p>
+                <div class="row justify-content-center align-items-center">
+                    <button id="validarConexionBtn">Probar Conexión</button>
+                    <div id="resultado" style="margin-top: 20px; font-weight: bold;"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col justify-content-center align-items-center">
+            <img src="/Resources/Pikachu.png" alt="Logo" style="height: 450px; width: auto;" />
+        </div>
+    </div>
+    
+</div>
+
+
+<script>
+    async function validarConexion() {
+        const url = "/Index?handler=Conexion"; // Llamada al manejador OnGetConexion
+        const resultadoDiv = document.getElementById("resultado");
+
+        try {
+            const response = await fetch(url);
+            if (response.ok) {
+                const data = await response.json(); // Leer la respuesta como JSON
+                resultadoDiv.innerText = `Resultado: ${data}`;
+
+                if (data.includes("Conexion Exitosa")) {
+                    setTimeout(() => {
+                        window.location.href = "/Pokemon/Index";
+                    }, 2000);
+                }
+            } else {
+                resultadoDiv.innerText = `Error en la conexión: ${response.status}`;
+            }
+        } catch (error) {
+            resultadoDiv.innerText = `Excepción: ${error.message}`;
+        }
+    }
+
+    // Asociar el evento al botón
+    document.getElementById("validarConexionBtn").addEventListener("click", validarConexion);
+</script>

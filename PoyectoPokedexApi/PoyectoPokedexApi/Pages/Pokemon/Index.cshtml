@@ -1,0 +1,65 @@
+﻿@page
+@model PoyectoPokedexApi.Pages.Pokemon.IndexModel
+
+
+<div class="container">
+    <div id="pokemonCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            @for (int i = 0; i < Model.pokemonList.Count; i += 8) // Cada "carousel-item" contiene 8 Pokémon
+            {
+                var isActive = i == 0 ? "active" : ""; // Para marcar el primer "carousel-item" como activo
+                <div class="carousel-item @isActive">
+                    <div class="row">
+                        @for (int j = i; j < i + 4 && j < Model.pokemonList.Count; j++) // Primera fila de 4 Pokémon
+                        {
+                            var pokemonItem = Model.pokemonList[j];
+                            <div class="col-3">
+                                <div class="card">
+                                    <img class="card-img-top" src="@pokemonItem.sprites?.front_default" alt="@pokemonItem.name" />
+                                    <div class="card-body">
+                                        <h5 class="card-title">@pokemonItem.name</h5>
+                                        <p class="card-text">ID: @pokemonItem.id</p>
+                                        <p class="card-text">Altura: @pokemonItem.height cm</p>
+                                        <p class="card-text">Peso: @pokemonItem.weight kg</p>
+
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                    <br />
+                    <div class="row">
+                        @for (int j = i + 4; j < i + 8 && j < Model.pokemonList.Count; j++) // Segunda fila de 4 Pokémon
+                        {
+                            var pokemonItem = Model.pokemonList[j];
+                            <div class="col-3">
+                                <div class="card">
+                                    <img class="card-img-top" src="@pokemonItem.sprites?.front_default" alt="@pokemonItem.name" />
+                                    <div class="card-body">
+                                        <h5 class="card-title">@pokemonItem.name</h5>
+                                        <p class="card-text">ID: @pokemonItem.id</p>
+                                        <p class="card-text">Altura: @pokemonItem.height cm</p>
+                                        <p class="card-text">Peso: @pokemonItem.weight kg</p>
+
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+            }
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#pokemonCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#pokemonCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+

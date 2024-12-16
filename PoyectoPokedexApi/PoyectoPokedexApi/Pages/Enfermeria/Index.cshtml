@@ -1,0 +1,85 @@
+﻿@page
+@model PoyectoPokedexApi.Pages.Enfermeria.IndexModel
+@{
+    ViewData["Title"] = "Enfermeria";
+}
+
+<style>
+    .text-orange-dark {
+        color: #DD8F00; /* Anaranjado oscuro */
+    }
+</style>
+
+<h3 class="text-orange-dark">Peticiones</h3>
+
+<table class="table table-striped table-hover">
+    <thead>
+        <tr class="table">
+            <th scope="col" class="col-4 ">Pokemon</th>
+            <th scope="col" class="col-6 ">Dueño</th>
+            <th scope="col" class="col-2 ">Acciones</th>
+        </tr>
+    </thead>
+
+    <tbody id="usuarioPkmTableBody">
+        <!-- aqui se van a cargar los datos con Js -->
+    </tbody>
+</table>
+
+
+@section Scripts {
+    <script>
+        async function cargarUsuariosPkm() {
+            const estado = 3; // El estado de los pkm debilitados
+            const response = await fetch(`https://localhost:7068/Api_Pdx_DbV2/UsuarioPkm/ObtenerPorEstado/${estado}`);
+            const usuariosPkm = await response.json();
+
+            const tableBody = document.getElementById("usuarioPkmTableBody");
+
+            // primero se vacia
+            tableBody.innerHTML = "";
+
+            if (usuariosPkm && usuariosPkm.length > 0) {
+                console.log("test");
+                usuariosPkm.forEach(usuarioPkm => {
+                    const row = document.createElement("tr");
+
+                    row.innerHTML = `
+                        <td hidden>${usuarioPkm.id}</td>
+                        <td>${usuarioPkm.nombre}</td>
+                        <td>${usuarioPkm.nombreUsuario}</td>
+                        <td>
+                            <button class="btn btn-sm btn-primary" onclick="curarPokemon(${usuarioPkm.id})">Curar</button>
+                        </td>
+                    `;
+                    tableBody.appendChild(row);
+                });
+            } else {
+                const row = document.createElement("tr");
+                row.innerHTML = "<td colspan='4'>No se encontraron registros.</td>";
+                tableBody.appendChild(row);
+            }
+        }
+
+        async function curarPokemon(id) {
+            try {
+                const response = await fetch(`https://localhost:7068/Api_Pdx_DbV2/UsuarioPkm/CurarPokemon/${id}`, {
+                    method: 'PUT', // Asumiendo que usas un método PUT para actualizar
+                });
+
+                if (response.ok) {
+                    alert("Pokémon curado exitosamente.");
+                    cargarUsuariosPkm(); // Recargar la tabla
+                } else {
+                    const error = await response.text();
+                    alert(`Error al curar Pokémon: ${error}`);
+                }
+            } catch (error) {
+                alert(`Error de red: ${error.message}`);
+            }
+        }
+
+        // Cargar los datos cuando la página esté lista
+        window.onload = cargarUsuariosPkm;
+    </script>
+}

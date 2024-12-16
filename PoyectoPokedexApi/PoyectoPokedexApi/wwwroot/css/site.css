@@ -1,0 +1,71 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    font-family: "Press Start 2P", serif;
+}
+
+
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.scrollable-table-container {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+
+/* Estilo para los enlaces Login y Registrarse */
+.navbar-nav .nav-item .nav-link {
+/*    font-family: 'Pokemon Classic', sans-serif;*/
+    font-size: 10px;
+    font-weight: bold;
+    color: var(--negro-texto); /* Color de texto por defecto */
+    background-color: transparent; /* Fondo transparente por defecto */
+    border: 2px solid var(--negro-texto); /* Borde negro por defecto */
+    padding: 8px 15px;
+    border-radius: 15px;
+    margin-right: 10px;
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+    /* Cambio de color cuando el mouse pasa por encima (hover) */
+    .navbar-nav .nav-item .nav-link:hover {
+        background-color: #FF9500; /* Fondo naranja cuando se pasa el mouse */
+        border-color: #FF9500; /* Borde naranja */
+        color: white; /* Color de texto blanco cuando se pasa el mouse */
+    }
+
+#validarConexionBtn {
+    background-image: linear-gradient(to right, #40E0D0, #003366); /* Degradado de izquierda a derecha */
+    color: white;
+    border: none;
+    padding: 15px 30px; /* Tamaño del botón */
+    border-radius: 50px; /* Redondear el botón */
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-image 0.3s ease; /* Transición suave del degradado */
+    cursor: pointer;
+}
+
+ 

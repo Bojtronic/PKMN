@@ -1,0 +1,647 @@
+[
+  {
+    "ContainingType": "Api_Pdx_Db_V2.Controllers.ConexionController",
+    "Method": "Conectar",
+    "RelativePath": "Api_Pdx_DbV2/Conexion",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Api_Pdx_Db_V2.Controllers.enfermeriaController",
+    "Method": "GetRoles",
+    "RelativePath": "Api_Pdx_DbV2/enfermeria",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Api_Pdx_Db_V2.Models.EnfermeriaModel, Api_Pdx_Db_V2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Api_Pdx_Db_V2.Controllers.enfermeriaController",
+    "Method": "RegistrarEnfermeria",
+    "RelativePath": "Api_Pdx_DbV2/enfermeria/RegistrarEnfermeria",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Api_Pdx_Db_V2.Controllers.EstadoController",
+    "Method": "GetEstado",
+    "RelativePath": "Api_Pdx_DbV2/Estado",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Api_Pdx_Db_V2.Models.EstadoModel, Api_Pdx_Db_V2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Api_Pdx_Db_V2.Controllers.EstadoController",
+    "Method": "GetEstadoPorId",
+    "RelativePath": "Api_Pdx_DbV2/Estado/estado/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Api_Pdx_Db_V2.Models.EstadoModel",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Api_Pdx_Db_V2.Controllers.MensajeController",
+    "Method": "GetMensajePorId",
+    "RelativePath": "Api_Pdx_DbV2/Mensaje/Mensaje",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Api_Pdx_Db_V2.Models.MensajesModel",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Api_Pdx_Db_V2.Controllers.RetosController",
+    "Method": "GetRetos",
+    "RelativePath": "Api_Pdx_DbV2/Retos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Api_Pdx_Db_V2.Models.RetoModel, Api_Pdx_Db_V2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Api_Pdx_Db_V2.Controllers.RetosController",
+    "Method": "CrearReto",
+    "RelativePath": "Api_Pdx_DbV2/Retos/CrearReto/{idUser1}/{idUser2}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idUser1",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "idUser2",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "reto",
+        "Type": "Api_Pdx_Db_V2.Models.RetoModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Api_Pdx_Db_V2.Controllers.RolController",
+    "Method": "GetRoles",
+    "RelativePath": "Api_Pdx_DbV2/Rol",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Api_Pdx_Db_V2.Models.RolModel, Api_Pdx_Db_V2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Api_Pdx_Db_V2.Controllers.RolController",
+    "Method": "GetRolPorId",
+    "RelativePath": "Api_Pdx_DbV2/Rol/rol/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Api_Pdx_Db_V2.Models.RolModel",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Api_Pdx_Db_V2.Controllers.UsuarioController",
+    "Method": "GetUsuario",
+    "RelativePath": "Api_Pdx_DbV2/Usuario",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Api_Pdx_Db_V2.Models.UsuarioModel, Api_Pdx_Db_V2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Api_Pdx_Db_V2.Controllers.UsuarioController",
+    "Method": "CrearUsuario",
+    "RelativePath": "Api_Pdx_DbV2/Usuario/Crear Usuario",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "nuevoUsuario",
+        "Type": "Api_Pdx_Db_V2.Models.UsuarioModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Api_Pdx_Db_V2.Models.UsuarioModel",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Api_Pdx_Db_V2.Controllers.UsuarioController",
+    "Method": "EliminarUsuario",
+    "RelativePath": "Api_Pdx_DbV2/Usuario/Eliminar/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Api_Pdx_Db_V2.Controllers.UsuarioController",
+    "Method": "Login",
+    "RelativePath": "Api_Pdx_DbV2/Usuario/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "login",
+        "Type": "Api_Pdx_Db_V2.Models.LoginModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Api_Pdx_Db_V2.Controllers.UsuarioController",
+    "Method": "GetUsuarioPorId",
+    "RelativePath": "Api_Pdx_DbV2/Usuario/Usuario/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Api_Pdx_Db_V2.Models.UsuarioModel",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Api_Pdx_Db_V2.Controllers.UsuarioController",
+    "Method": "GetVistaUsuariosRoles",
+    "RelativePath": "Api_Pdx_DbV2/Usuario/VistaUsuariosRoles",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Api_Pdx_Db_V2.Models.UsuarioRolViewModel, Api_Pdx_Db_V2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Api_Pdx_Db_V2.Controllers.UsuarioPkmController",
+    "Method": "GetUsuarios_pkm",
+    "RelativePath": "Api_Pdx_DbV2/UsuarioPkm",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Api_Pdx_Db_V2.Models.UsuarioPkmModel, Api_Pdx_Db_V2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Api_Pdx_Db_V2.Controllers.UsuarioPkmController",
+    "Method": "ObtenerPkmsUsuario",
+    "RelativePath": "Api_Pdx_DbV2/UsuarioPkm/{_idUsuario}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "_idUsuario",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Api_Pdx_Db_V2.Models.UsuarioPkmModel, Api_Pdx_Db_V2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Api_Pdx_Db_V2.Controllers.UsuarioPkmController",
+    "Method": "ObtenerPkmsUsuarioConEstado",
+    "RelativePath": "Api_Pdx_DbV2/UsuarioPkm/{_idUsuario}/PkmActivo",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "_idUsuario",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Api_Pdx_Db_V2.Models.UsuarioPkmModel, Api_Pdx_Db_V2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Api_Pdx_Db_V2.Controllers.UsuarioPkmController",
+    "Method": "AgregarUsuarioPkm",
+    "RelativePath": "Api_Pdx_DbV2/UsuarioPkm/AgregarPkm/{idUsuario}/{idPkm}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idUsuario",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "idPkm",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Api_Pdx_Db_V2.Controllers.UsuarioPkmController",
+    "Method": "CurarPokemon",
+    "RelativePath": "Api_Pdx_DbV2/UsuarioPkm/CurarPokemon/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Api_Pdx_Db_V2.Controllers.UsuarioPkmController",
+    "Method": "EliminarUsuarioPkm",
+    "RelativePath": "Api_Pdx_DbV2/UsuarioPkm/EliminarUsuarioPkm/{idUsuario}/{idPkm}/{idUsuarioPkm}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idUsuario",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "idPkm",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "idUsuarioPkm",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Api_Pdx_Db_V2.Controllers.UsuarioPkmController",
+    "Method": "ObtenerPorEstado",
+    "RelativePath": "Api_Pdx_DbV2/UsuarioPkm/ObtenerPorEstado/{estado}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "estado",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Api_Pdx_Db_V2.Controllers.UsuarioPktController",
+    "Method": "GetUsuarios_pkt",
+    "RelativePath": "Api_Pdx_DbV2/UsuarioPkt",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Api_Pdx_Db_V2.Models.UsuarioPktModel, Api_Pdx_Db_V2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Api_Pdx_Db_V2.Controllers.UsuarioPktController",
+    "Method": "ObtenerPktUsuario",
+    "RelativePath": "Api_Pdx_DbV2/UsuarioPkt/{_idUsuario}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "_idUsuario",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Api_Pdx_Db_V2.Models.UsuarioPktModel, Api_Pdx_Db_V2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Api_Pdx_Db_V2.Controllers.UsuarioPktController",
+    "Method": "AsignarPocketUsuario",
+    "RelativePath": "Api_Pdx_DbV2/UsuarioPkt/AsignarPocket",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "_idUsuario",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "_idPokemon",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Api_Pdx_Db_V2.Controllers.UsuarioPktController",
+    "Method": "IntercambiarPokemons",
+    "RelativePath": "Api_Pdx_DbV2/UsuarioPkt/intercambiar",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idUsuario",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pkmId1",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pkmId2",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Api_Pdx_Db_V2.Controllers.UsuarioRolController",
+    "Method": "GetUsuariosRoles",
+    "RelativePath": "Api_Pdx_DbV2/UsuarioRol",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Api_Pdx_Db_V2.Models.UsuarioRolModel, Api_Pdx_Db_V2, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Api_Pdx_Db_V2.Controllers.UsuarioRolController",
+    "Method": "CambiarRolDeUsuario",
+    "RelativePath": "Api_Pdx_DbV2/UsuarioRol/{idUsuario}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idUsuario",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "nuevoIdRol",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Api_Pdx_Db_V2.Controllers.UsuarioRolController",
+    "Method": "ObtenerRolUsurio",
+    "RelativePath": "Api_Pdx_DbV2/UsuarioRol/Optener rol usuario",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Api_Pdx_Db_V2.Models.UsuarioRolModel",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]
