@@ -69,16 +69,13 @@ ADD CONSTRAINT fk_usr_pkt_pkm3 FOREIGN KEY (Pkm_Id3) REFERENCES Usuario_Pkm(Id) 
 -- Agregar las llaves foráneas
 ALTER TABLE Enfermeria
 ADD CONSTRAINT fk_enfermeria_usuario FOREIGN KEY (IdUsuario) REFERENCES Usuario(Id) ON DELETE CASCADE,
-ADD CONSTRAINT fk_enfermeria_usupkm FOREIGN KEY (IdUsuPkm) REFERENCES Usuario_Pkm(Id) ON DELETE CASCADE;-- Agregar las llaves foráneas
-ALTER TABLE Enfermeria
-ADD CONSTRAINT fk_enfermeria_usuario FOREIGN KEY (IdUsuario) REFERENCES Usuario(Id) ON DELETE CASCADE,
 ADD CONSTRAINT fk_enfermeria_usupkm FOREIGN KEY (IdUsuPkm) REFERENCES Usuario_Pkm(Id) ON DELETE CASCADE;
 
 
 
 -- Insertar datos iniciales en las tablas
 INSERT INTO Rol (Descripcion) VALUES ('Admin'), ('User'), ('Guest');
-INSERT INTO Usuario (Nombre, UserName, Pass) VALUES ('Administrador', 'Admin', 'pass');
+INSERT INTO Usuario (Nombre, UserName, Pass) VALUES ('Administrador', 'Admin', '$2a$10$Ul7VAgHsdyVDHegrgmtusueNR/ETXhwKnVN.9F2drBZakQBU.5LuC');
 INSERT INTO Usuario_Rol (IdRol, IdUsuario) VALUES (1, 1000);
 
 INSERT INTO Estado VALUES 
