@@ -24,6 +24,14 @@ build_property.EnableCodeStyleSeverity =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5pc3RyYWNpb25cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Manuel/Documents/Brete/JuanPa/PROY_U/repo/PKMN/PoyectoPokedexApi/PoyectoPokedexApi/Pages/Administracion/Pokedex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5pc3RyYWNpb25cUG9rZWRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Manuel/Documents/Brete/JuanPa/PROY_U/repo/PKMN/PoyectoPokedexApi/PoyectoPokedexApi/Pages/Administracion/Usuarios.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5pc3RyYWNpb25cVXN1YXJpb3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Manuel/Documents/Brete/JuanPa/PROY_U/repo/PKMN/PoyectoPokedexApi/PoyectoPokedexApi/Pages/Enfermeria/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRW5mZXJtZXJpYVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -50,6 +58,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Manuel/Documents/Brete/JuanPa/PROY_U/repo/PKMN/PoyectoPokedexApi/PoyectoPokedexApi/Pages/Pokemon/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUG9rZW1vblxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Manuel/Documents/Brete/JuanPa/PROY_U/repo/PKMN/PoyectoPokedexApi/PoyectoPokedexApi/Pages/Pokemon/Logout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUG9rZW1vblxMb2dvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Manuel/Documents/Brete/JuanPa/PROY_U/repo/PKMN/PoyectoPokedexApi/PoyectoPokedexApi/Pages/Pokemon/Registro.cshtml]

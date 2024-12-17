@@ -49,9 +49,13 @@ namespace PoyectoPokedexApi.Pages.Pokemon
                     UsuarioAutenticado = logResponse.Usuario;
                     MensajeLogin = "Inicio de sesión exitoso.";
 
-                    // Almacenar el objeto Usuario en TempData
+                   
                     TempData["Usuario"] = JsonConvert.SerializeObject(logResponse.Usuario);
                     TempData["IsAuthenticated"] = true;
+
+                    // Usando Session en su lugar:
+                    HttpContext.Session.SetString("IsAuthenticated", "true");
+                    HttpContext.Session.SetString("Usuario", JsonConvert.SerializeObject(logResponse.Usuario));
 
                     // Redirigir a la página de User
                     return RedirectToPage("/Pokemon/User");
@@ -59,7 +63,9 @@ namespace PoyectoPokedexApi.Pages.Pokemon
                 else
                 {
                     MensajeLogin = "Credenciales inválidas.";
-                    TempData["IsAuthenticated"] = false;
+                    // Comentado el uso de TempData:
+                    // TempData["IsAuthenticated"] = false;
+                    HttpContext.Session.SetString("IsAuthenticated", "false");
                 }
             }
             catch (Exception ex)
@@ -69,7 +75,5 @@ namespace PoyectoPokedexApi.Pages.Pokemon
 
             return Page();
         }
-
     }
 }
-

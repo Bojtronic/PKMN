@@ -1,4 +1,8 @@
-﻿<!DOCTYPE html>
+﻿@using PoyectoPokedexApi.Models.UsuarioModel
+@using Newtonsoft.Json
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -20,42 +24,60 @@
                             <img src="/Resources/Logo.jpg" alt="Logo" style="height: 41px; width: auto;" />
                         </a>
                     </div>
-                    <ul class="navbar-nav me-auto">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark letra" asp-area="" asp-page="/Pokemon/Index">Pokedex</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Entrenador/Index">Panel de Entrenador</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Luchas/Index">Luchar</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Administracion/Index">Administración</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Enfermeria/Index">Enfermería</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Pokemon/Usuarios">Usuarios</a>
-                        </li>
-                    </ul>
-                </div>
 
+                    <!-- Mostrar solo si se ha logueado -->
+                    @if (HttpContextAccessor.HttpContext.Session.GetString("IsAuthenticated") != null && HttpContextAccessor.HttpContext.Session.GetString("IsAuthenticated") == "true")
+                    {
+                        <ul class="navbar-nav me-auto">
+                            <li class="nav-item">
+                                <a class="nav-link text-dark letra" asp-area="" asp-page="/Pokemon/Index">Pokedex</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-page="/Pokemon/User">Panel de Entrenador</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-page="/Luchas/Index">Luchar</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-page="/Administracion/Index">Administración</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-page="/Enfermeria/Index">Enfermería</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-page="/Pokemon/Usuarios">Usuarios</a>
+                            </li>
+                        </ul>
+                    }
 
-                <div class="col col-lg-2">
                     <ul class="navbar-nav me-auto">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Pokemon/Login">Login</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Pokemon/Registro">Registarse</a>
-                        </li>
+                        @if (HttpContextAccessor.HttpContext.Session.GetString("IsAuthenticated") != null && HttpContextAccessor.HttpContext.Session.GetString("IsAuthenticated") == "true")
+                        {
+                            <!-- Aquí deberías tener un objeto de usuario en Session -->
+                            var usuario = JsonConvert.DeserializeObject<UsuarioModel>(HttpContextAccessor.HttpContext.Session.GetString("Usuario"));
+                            <li class="nav-item">
+                                <span class="nav-link text-dark">¡Hola, @usuario?.Nombre!</span>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-page="/Pokemon/Logout">Logout</a>
+                            </li>
+                        }
+                        else
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-page="/Pokemon/Login">Login</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-page="/Pokemon/Registro">Registrarse</a>
+                            </li>
+                        }
                     </ul>
+
                 </div>
             </div>
         </nav>
     </header>
+
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
