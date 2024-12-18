@@ -134,5 +134,40 @@ namespace Api_Pdx_Db_V2.Controllers
             }
         }
 
+        // Editar un usuario existente
+        [HttpPut("EditarUsuario/{id}")]
+        public ActionResult EditarUsuario(int id, [FromBody] UsuarioModel usuarioActualizado)
+        {
+            // Buscar el usuario por ID
+            var usuarioExistente = _conexionContext.usuario.FirstOrDefault(u => u.Id == id);
+
+            if (usuarioExistente == null)
+            {
+                return NotFound("Usuario no encontrado.");
+            }
+
+            // Actualizar los datos del usuario existente
+            usuarioExistente.Nombre = usuarioActualizado.Nombre;
+            usuarioExistente.UserName = usuarioActualizado.UserName;
+
+            // Si se envía una nueva contraseña, actualizarla
+            if (!string.IsNullOrEmpty(usuarioActualizado.Pass))
+            {
+                usuarioExistente.Pass = BCrypt.Net.BCrypt.HashPassword(usuarioActualizado.Pass);
+            }
+
+            // Guardar los cambios en la base de datos
+            try
+            {
+                _conexionContext.SaveChanges();
+                return Ok("Usuario actualizado exitosamente.");
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Error al actualizar el usuario: {ex.Message}");
+            }
+        }
+
+
     }
 }

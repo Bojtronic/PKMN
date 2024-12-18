@@ -1,16 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Manuel\\Documents\\Brete\\JuanPa\\PROY_U\\repo\\PKMN\\Api_Pdx_Db_V2\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{079EA053-420D-4C51-8EAC-7DDFEAEB1B45}|Api_Pdx_Db_V2\\Api_Pdx_Db_V2.csproj|c:\\users\\manuel\\documents\\brete\\juanpa\\proy_u\\repo\\pkmn\\api_pdx_db_v2\\api_pdx_db_v2\\controllers\\usuariopktcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{079EA053-420D-4C51-8EAC-7DDFEAEB1B45}|Api_Pdx_Db_V2\\Api_Pdx_Db_V2.csproj|solutionrelative:api_pdx_db_v2\\controllers\\usuariopktcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{079EA053-420D-4C51-8EAC-7DDFEAEB1B45}|Api_Pdx_Db_V2\\Api_Pdx_Db_V2.csproj|c:\\users\\manuel\\documents\\brete\\juanpa\\proy_u\\repo\\pkmn\\api_pdx_db_v2\\api_pdx_db_v2\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{079EA053-420D-4C51-8EAC-7DDFEAEB1B45}|Api_Pdx_Db_V2\\Api_Pdx_Db_V2.csproj|solutionrelative:api_pdx_db_v2\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -18,36 +9,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 427,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UsuarioPktController.cs",
-              "DocumentMoniker": "C:\\Users\\Manuel\\Documents\\Brete\\JuanPa\\PROY_U\\repo\\PKMN\\Api_Pdx_Db_V2\\Api_Pdx_Db_V2\\Controllers\\UsuarioPktController.cs",
-              "RelativeDocumentMoniker": "Api_Pdx_Db_V2\\Controllers\\UsuarioPktController.cs",
-              "ToolTip": "C:\\Users\\Manuel\\Documents\\Brete\\JuanPa\\PROY_U\\repo\\PKMN\\Api_Pdx_Db_V2\\Api_Pdx_Db_V2\\Controllers\\UsuarioPktController.cs",
-              "RelativeToolTip": "Api_Pdx_Db_V2\\Controllers\\UsuarioPktController.cs",
-              "ViewState": "AgIAAGoAAAAAAAAAAAAawHkAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T02:22:13.874Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UsuarioController.cs",
-              "DocumentMoniker": "C:\\Users\\Manuel\\Documents\\Brete\\JuanPa\\PROY_U\\repo\\PKMN\\Api_Pdx_Db_V2\\Api_Pdx_Db_V2\\Controllers\\UsuarioController.cs",
-              "RelativeDocumentMoniker": "Api_Pdx_Db_V2\\Controllers\\UsuarioController.cs",
-              "ToolTip": "C:\\Users\\Manuel\\Documents\\Brete\\JuanPa\\PROY_U\\repo\\PKMN\\Api_Pdx_Db_V2\\Api_Pdx_Db_V2\\Controllers\\UsuarioController.cs",
-              "RelativeToolTip": "Api_Pdx_Db_V2\\Controllers\\UsuarioController.cs",
-              "ViewState": "AgIAAF8AAAAAAAAAAAAvwHEAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T22:57:08.066Z"
             }
           ]
         }

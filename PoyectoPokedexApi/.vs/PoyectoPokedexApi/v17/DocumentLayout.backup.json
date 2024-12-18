@@ -3,24 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Manuel\\Documents\\Brete\\JuanPa\\PROY_U\\repo\\PKMN\\PoyectoPokedexApi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7B1BF5D0-47C9-4278-9DB4-192B5A7F4235}|PoyectoPokedexApi\\PoyectoPokedexApi.csproj|c:\\users\\manuel\\documents\\brete\\juanpa\\proy_u\\repo\\pkmn\\poyectopokedexapi\\poyectopokedexapi\\pages\\pokemon\\logout.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B1BF5D0-47C9-4278-9DB4-192B5A7F4235}|PoyectoPokedexApi\\PoyectoPokedexApi.csproj|solutionrelative:poyectopokedexapi\\pages\\pokemon\\logout.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7B1BF5D0-47C9-4278-9DB4-192B5A7F4235}|PoyectoPokedexApi\\PoyectoPokedexApi.csproj|c:\\users\\manuel\\documents\\brete\\juanpa\\proy_u\\repo\\pkmn\\poyectopokedexapi\\poyectopokedexapi\\pages\\luchas\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7B1BF5D0-47C9-4278-9DB4-192B5A7F4235}|PoyectoPokedexApi\\PoyectoPokedexApi.csproj|solutionrelative:poyectopokedexapi\\pages\\luchas\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7B1BF5D0-47C9-4278-9DB4-192B5A7F4235}|PoyectoPokedexApi\\PoyectoPokedexApi.csproj|c:\\users\\manuel\\documents\\brete\\juanpa\\proy_u\\repo\\pkmn\\poyectopokedexapi\\poyectopokedexapi\\pages\\pokemon\\logout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7B1BF5D0-47C9-4278-9DB4-192B5A7F4235}|PoyectoPokedexApi\\PoyectoPokedexApi.csproj|solutionrelative:poyectopokedexapi\\pages\\pokemon\\logout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{7B1BF5D0-47C9-4278-9DB4-192B5A7F4235}|PoyectoPokedexApi\\PoyectoPokedexApi.csproj|c:\\users\\manuel\\documents\\brete\\juanpa\\proy_u\\repo\\pkmn\\poyectopokedexapi\\poyectopokedexapi\\wwwroot\\js\\battle.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{7B1BF5D0-47C9-4278-9DB4-192B5A7F4235}|PoyectoPokedexApi\\PoyectoPokedexApi.csproj|solutionrelative:poyectopokedexapi\\wwwroot\\js\\battle.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7B1BF5D0-47C9-4278-9DB4-192B5A7F4235}|PoyectoPokedexApi\\PoyectoPokedexApi.csproj|c:\\users\\manuel\\documents\\brete\\juanpa\\proy_u\\repo\\pkmn\\poyectopokedexapi\\poyectopokedexapi\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7B1BF5D0-47C9-4278-9DB4-192B5A7F4235}|PoyectoPokedexApi\\PoyectoPokedexApi.csproj|solutionrelative:poyectopokedexapi\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7B1BF5D0-47C9-4278-9DB4-192B5A7F4235}|PoyectoPokedexApi\\PoyectoPokedexApi.csproj|c:\\users\\manuel\\documents\\brete\\juanpa\\proy_u\\repo\\pkmn\\poyectopokedexapi\\poyectopokedexapi\\pages\\pokemon\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B1BF5D0-47C9-4278-9DB4-192B5A7F4235}|PoyectoPokedexApi\\PoyectoPokedexApi.csproj|solutionrelative:poyectopokedexapi\\pages\\pokemon\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7B1BF5D0-47C9-4278-9DB4-192B5A7F4235}|PoyectoPokedexApi\\PoyectoPokedexApi.csproj|c:\\users\\manuel\\documents\\brete\\juanpa\\proy_u\\repo\\pkmn\\poyectopokedexapi\\poyectopokedexapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B1BF5D0-47C9-4278-9DB4-192B5A7F4235}|PoyectoPokedexApi\\PoyectoPokedexApi.csproj|solutionrelative:poyectopokedexapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7B1BF5D0-47C9-4278-9DB4-192B5A7F4235}|PoyectoPokedexApi\\PoyectoPokedexApi.csproj|c:\\users\\manuel\\documents\\brete\\juanpa\\proy_u\\repo\\pkmn\\poyectopokedexapi\\poyectopokedexapi\\wwwroot\\css\\battle.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{7B1BF5D0-47C9-4278-9DB4-192B5A7F4235}|PoyectoPokedexApi\\PoyectoPokedexApi.csproj|solutionrelative:poyectopokedexapi\\wwwroot\\css\\battle.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,75 +22,49 @@
       "DocumentGroups": [
         {
           "DockedWidth": 971,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Logout.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\Manuel\\Documents\\Brete\\JuanPa\\PROY_U\\repo\\PKMN\\PoyectoPokedexApi\\PoyectoPokedexApi\\Pages\\Pokemon\\Logout.cshtml.cs",
-              "RelativeDocumentMoniker": "PoyectoPokedexApi\\Pages\\Pokemon\\Logout.cshtml.cs",
-              "ToolTip": "C:\\Users\\Manuel\\Documents\\Brete\\JuanPa\\PROY_U\\repo\\PKMN\\PoyectoPokedexApi\\PoyectoPokedexApi\\Pages\\Pokemon\\Logout.cshtml.cs",
-              "RelativeToolTip": "PoyectoPokedexApi\\Pages\\Pokemon\\Logout.cshtml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T21:13:19.792Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Logout.cshtml",
-              "DocumentMoniker": "C:\\Users\\Manuel\\Documents\\Brete\\JuanPa\\PROY_U\\repo\\PKMN\\PoyectoPokedexApi\\PoyectoPokedexApi\\Pages\\Pokemon\\Logout.cshtml",
-              "RelativeDocumentMoniker": "PoyectoPokedexApi\\Pages\\Pokemon\\Logout.cshtml",
-              "ToolTip": "C:\\Users\\Manuel\\Documents\\Brete\\JuanPa\\PROY_U\\repo\\PKMN\\PoyectoPokedexApi\\PoyectoPokedexApi\\Pages\\Pokemon\\Logout.cshtml",
-              "RelativeToolTip": "PoyectoPokedexApi\\Pages\\Pokemon\\Logout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-17T21:12:53.092Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Manuel\\Documents\\Brete\\JuanPa\\PROY_U\\repo\\PKMN\\PoyectoPokedexApi\\PoyectoPokedexApi\\Program.cs",
-              "RelativeDocumentMoniker": "PoyectoPokedexApi\\Program.cs",
-              "ToolTip": "C:\\Users\\Manuel\\Documents\\Brete\\JuanPa\\PROY_U\\repo\\PKMN\\PoyectoPokedexApi\\PoyectoPokedexApi\\Program.cs",
-              "RelativeToolTip": "PoyectoPokedexApi\\Program.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAcwBcAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T19:47:04.963Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Login.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\Manuel\\Documents\\Brete\\JuanPa\\PROY_U\\repo\\PKMN\\PoyectoPokedexApi\\PoyectoPokedexApi\\Pages\\Pokemon\\Login.cshtml.cs",
-              "RelativeDocumentMoniker": "PoyectoPokedexApi\\Pages\\Pokemon\\Login.cshtml.cs",
-              "ToolTip": "C:\\Users\\Manuel\\Documents\\Brete\\JuanPa\\PROY_U\\repo\\PKMN\\PoyectoPokedexApi\\PoyectoPokedexApi\\Pages\\Pokemon\\Login.cshtml.cs",
-              "RelativeToolTip": "PoyectoPokedexApi\\Pages\\Pokemon\\Login.cshtml.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAcwDMAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T02:45:59.114Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\Manuel\\Documents\\Brete\\JuanPa\\PROY_U\\repo\\PKMN\\PoyectoPokedexApi\\PoyectoPokedexApi\\Pages\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "PoyectoPokedexApi\\Pages\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\Manuel\\Documents\\Brete\\JuanPa\\PROY_U\\repo\\PKMN\\PoyectoPokedexApi\\PoyectoPokedexApi\\Pages\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "PoyectoPokedexApi\\Pages\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAEUAAAAAAAAAAAAqwFYAAAA4AAAAAAAAAA==",
+              "Title": "battle.css",
+              "DocumentMoniker": "C:\\Users\\Manuel\\Documents\\Brete\\JuanPa\\PROY_U\\repo\\PKMN\\PoyectoPokedexApi\\PoyectoPokedexApi\\wwwroot\\css\\battle.css",
+              "RelativeDocumentMoniker": "PoyectoPokedexApi\\wwwroot\\css\\battle.css",
+              "ToolTip": "C:\\Users\\Manuel\\Documents\\Brete\\JuanPa\\PROY_U\\repo\\PKMN\\PoyectoPokedexApi\\PoyectoPokedexApi\\wwwroot\\css\\battle.css",
+              "RelativeToolTip": "PoyectoPokedexApi\\wwwroot\\css\\battle.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-12-18T04:56:40.493Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "battle.js",
+              "DocumentMoniker": "C:\\Users\\Manuel\\Documents\\Brete\\JuanPa\\PROY_U\\repo\\PKMN\\PoyectoPokedexApi\\PoyectoPokedexApi\\wwwroot\\js\\battle.js",
+              "RelativeDocumentMoniker": "PoyectoPokedexApi\\wwwroot\\js\\battle.js",
+              "ToolTip": "C:\\Users\\Manuel\\Documents\\Brete\\JuanPa\\PROY_U\\repo\\PKMN\\PoyectoPokedexApi\\PoyectoPokedexApi\\wwwroot\\js\\battle.js",
+              "RelativeToolTip": "PoyectoPokedexApi\\wwwroot\\js\\battle.js",
+              "ViewState": "AgIAACMAAAAAAAAAAAAswG0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-12-18T04:42:04.229Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Manuel\\Documents\\Brete\\JuanPa\\PROY_U\\repo\\PKMN\\PoyectoPokedexApi\\PoyectoPokedexApi\\Pages\\Luchas\\Index.cshtml",
+              "RelativeDocumentMoniker": "PoyectoPokedexApi\\Pages\\Luchas\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Manuel\\Documents\\Brete\\JuanPa\\PROY_U\\repo\\PKMN\\PoyectoPokedexApi\\PoyectoPokedexApi\\Pages\\Luchas\\Index.cshtml",
+              "RelativeToolTip": "PoyectoPokedexApi\\Pages\\Luchas\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-17T01:16:50.697Z",
+              "WhenOpened": "2024-12-18T03:37:58.522Z",
               "EditorCaption": ""
             }
           ]

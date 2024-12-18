@@ -257,6 +257,27 @@
   },
   {
     "ContainingType": "Api_Pdx_Db_V2.Controllers.UsuarioController",
+    "Method": "EditarUsuario",
+    "RelativePath": "Api_Pdx_DbV2/Usuario/EditarUsuario/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "usuarioActualizado",
+        "Type": "Api_Pdx_Db_V2.Models.UsuarioModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Api_Pdx_Db_V2.Controllers.UsuarioController",
     "Method": "EliminarUsuario",
     "RelativePath": "Api_Pdx_DbV2/Usuario/Eliminar/{id}",
     "HttpMethod": "DELETE",

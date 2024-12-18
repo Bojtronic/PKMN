@@ -1,5 +1,29 @@
 ﻿<Project>
   <ItemGroup>
+    <StaticWebAssetEndpoint Include="_content/PoyectoPokedexApi/audio/Pokemon.7vmxl5jdea.mp3">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\audio\Pokemon.mp3'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"7vmxl5jdea"},{"Name":"integrity","Value":"sha256-A8uU\u002BcpS5OELUwi395G46bhSV24lTDhmqqokSIKvpbw="},{"Name":"label","Value":"_content/PoyectoPokedexApi/audio/Pokemon.mp3"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2510478"},{"Name":"Content-Type","Value":"audio/mpeg"},{"Name":"ETag","Value":"\u0022A8uU\u002BcpS5OELUwi395G46bhSV24lTDhmqqokSIKvpbw=\u0022"},{"Name":"Last-Modified","Value":"Wed, 18 Dec 2024 05:18:57 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/PoyectoPokedexApi/audio/Pokemon.mp3">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\audio\Pokemon.mp3'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-A8uU\u002BcpS5OELUwi395G46bhSV24lTDhmqqokSIKvpbw="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"2510478"},{"Name":"Content-Type","Value":"audio/mpeg"},{"Name":"ETag","Value":"\u0022A8uU\u002BcpS5OELUwi395G46bhSV24lTDhmqqokSIKvpbw=\u0022"},{"Name":"Last-Modified","Value":"Wed, 18 Dec 2024 05:18:57 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/PoyectoPokedexApi/css/battle.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\battle.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-f6Rpptjst7\u002BTHVjiJKdfWlTyXjS85oY5meDFHLHJkM0="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"356"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022f6Rpptjst7\u002BTHVjiJKdfWlTyXjS85oY5meDFHLHJkM0=\u0022"},{"Name":"Last-Modified","Value":"Wed, 18 Dec 2024 04:57:40 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/PoyectoPokedexApi/css/battle.hc8lmm5ocz.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\battle.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"hc8lmm5ocz"},{"Name":"integrity","Value":"sha256-f6Rpptjst7\u002BTHVjiJKdfWlTyXjS85oY5meDFHLHJkM0="},{"Name":"label","Value":"_content/PoyectoPokedexApi/css/battle.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"356"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022f6Rpptjst7\u002BTHVjiJKdfWlTyXjS85oY5meDFHLHJkM0=\u0022"},{"Name":"Last-Modified","Value":"Wed, 18 Dec 2024 04:57:40 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/PoyectoPokedexApi/css/site.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
@@ -23,6 +47,18 @@
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Jtxf9L\u002B5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"5430"},{"Name":"Content-Type","Value":"image/x-icon"},{"Name":"ETag","Value":"\u0022Jtxf9L\u002B5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM=\u0022"},{"Name":"Last-Modified","Value":"Tue, 10 Dec 2024 02:11:37 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/PoyectoPokedexApi/js/battle.0mu5gnd4jf.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\battle.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"0mu5gnd4jf"},{"Name":"integrity","Value":"sha256-yDmR7iwznDOLw9I\u002BSIg7NYTHbUncA1VuTrLeyb32XcE="},{"Name":"label","Value":"_content/PoyectoPokedexApi/js/battle.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"4826"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022yDmR7iwznDOLw9I\u002BSIg7NYTHbUncA1VuTrLeyb32XcE=\u0022"},{"Name":"Last-Modified","Value":"Wed, 18 Dec 2024 05:12:43 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/PoyectoPokedexApi/js/battle.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\battle.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-yDmR7iwznDOLw9I\u002BSIg7NYTHbUncA1VuTrLeyb32XcE="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"4826"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022yDmR7iwznDOLw9I\u002BSIg7NYTHbUncA1VuTrLeyb32XcE=\u0022"},{"Name":"Last-Modified","Value":"Wed, 18 Dec 2024 05:12:43 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/PoyectoPokedexApi/js/site.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))</AssetFile>

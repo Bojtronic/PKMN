@@ -16,6 +16,11 @@
 
   <ItemGroup>
     <Folder Include="Resources\" />
+    <Folder Include="wwwroot\audio\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\js\battle.js" />
   </ItemGroup>
 
 </Project>

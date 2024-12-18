@@ -12,7 +12,7 @@ namespace PoyectoPokedexApi.Pages.Pokemon
         [BindProperty]
         public UsuarioModel usuario { get; set; }
 
-        public CreateModel nuevoUsuario { get; set; }
+        public UsuarioModel nuevoUsuario { get; set; }
         public RegistroModel(UsuarioApiClient usuarioApiClient)
         {
             _usuarioApiClient = usuarioApiClient;
@@ -30,7 +30,7 @@ namespace PoyectoPokedexApi.Pages.Pokemon
             try
             {
                 // Crear un nuevo usuario con las credenciales que ingresa el usuario
-                nuevoUsuario = new CreateModel
+                nuevoUsuario = new UsuarioModel
                 {
                     Id = 0,
                     Nombre = usuario.UserName, 

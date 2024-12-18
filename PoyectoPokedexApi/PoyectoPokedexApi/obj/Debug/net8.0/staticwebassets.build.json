@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "cheMTWM9FnKeqysNLCA7EuJhwJC4hyJCvCkW9UbNO3M=",
+  "Hash": "m2HzIRAqX8kB0z8aT0Dk3EnjXjMdN5xESZ/ZTtzwn38=",
   "Source": "PoyectoPokedexApi",
   "BasePath": "_content/PoyectoPokedexApi",
   "Mode": "Default",
@@ -59,6 +59,48 @@
       "OriginalItemSpec": "C:\\Users\\Manuel\\Documents\\Brete\\JuanPa\\PROY_U\\repo\\PKMN\\PoyectoPokedexApi\\PoyectoPokedexApi\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\PoyectoPokedexApi.bundle.scp.css"
     },
     {
+      "Identity": "C:\\Users\\Manuel\\Documents\\Brete\\JuanPa\\PROY_U\\repo\\PKMN\\PoyectoPokedexApi\\PoyectoPokedexApi\\wwwroot\\audio\\Pokemon.mp3",
+      "SourceId": "PoyectoPokedexApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Manuel\\Documents\\Brete\\JuanPa\\PROY_U\\repo\\PKMN\\PoyectoPokedexApi\\PoyectoPokedexApi\\wwwroot\\",
+      "BasePath": "_content/PoyectoPokedexApi",
+      "RelativePath": "audio/Pokemon#[.{fingerprint}]?.mp3",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "7vmxl5jdea",
+      "Integrity": "A8uU+cpS5OELUwi395G46bhSV24lTDhmqqokSIKvpbw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\audio\\Pokemon.mp3"
+    },
+    {
+      "Identity": "C:\\Users\\Manuel\\Documents\\Brete\\JuanPa\\PROY_U\\repo\\PKMN\\PoyectoPokedexApi\\PoyectoPokedexApi\\wwwroot\\css\\battle.css",
+      "SourceId": "PoyectoPokedexApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Manuel\\Documents\\Brete\\JuanPa\\PROY_U\\repo\\PKMN\\PoyectoPokedexApi\\PoyectoPokedexApi\\wwwroot\\",
+      "BasePath": "_content/PoyectoPokedexApi",
+      "RelativePath": "css/battle#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "hc8lmm5ocz",
+      "Integrity": "f6Rpptjst7+THVjiJKdfWlTyXjS85oY5meDFHLHJkM0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\battle.css"
+    },
+    {
       "Identity": "C:\\Users\\Manuel\\Documents\\Brete\\JuanPa\\PROY_U\\repo\\PKMN\\PoyectoPokedexApi\\PoyectoPokedexApi\\wwwroot\\css\\site.css",
       "SourceId": "PoyectoPokedexApi",
       "SourceType": "Discovered",
@@ -99,6 +141,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\Manuel\\Documents\\Brete\\JuanPa\\PROY_U\\repo\\PKMN\\PoyectoPokedexApi\\PoyectoPokedexApi\\wwwroot\\js\\battle.js",
+      "SourceId": "PoyectoPokedexApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Manuel\\Documents\\Brete\\JuanPa\\PROY_U\\repo\\PKMN\\PoyectoPokedexApi\\PoyectoPokedexApi\\wwwroot\\",
+      "BasePath": "_content/PoyectoPokedexApi",
+      "RelativePath": "js/battle#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "0mu5gnd4jf",
+      "Integrity": "yDmR7iwznDOLw9I+SIg7NYTHbUncA1VuTrLeyb32XcE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\battle.js"
     },
     {
       "Identity": "C:\\Users\\Manuel\\Documents\\Brete\\JuanPa\\PROY_U\\repo\\PKMN\\PoyectoPokedexApi\\PoyectoPokedexApi\\wwwroot\\js\\site.js",
@@ -1321,6 +1384,170 @@
   ],
   "Endpoints": [
     {
+      "Route": "audio/Pokemon.7vmxl5jdea.mp3",
+      "AssetFile": "C:\\Users\\Manuel\\Documents\\Brete\\JuanPa\\PROY_U\\repo\\PKMN\\PoyectoPokedexApi\\PoyectoPokedexApi\\wwwroot\\audio\\Pokemon.mp3",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2510478"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/mpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"A8uU+cpS5OELUwi395G46bhSV24lTDhmqqokSIKvpbw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 18 Dec 2024 05:18:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7vmxl5jdea"
+        },
+        {
+          "Name": "label",
+          "Value": "audio/Pokemon.mp3"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-A8uU+cpS5OELUwi395G46bhSV24lTDhmqqokSIKvpbw="
+        }
+      ]
+    },
+    {
+      "Route": "audio/Pokemon.mp3",
+      "AssetFile": "C:\\Users\\Manuel\\Documents\\Brete\\JuanPa\\PROY_U\\repo\\PKMN\\PoyectoPokedexApi\\PoyectoPokedexApi\\wwwroot\\audio\\Pokemon.mp3",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2510478"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "audio/mpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"A8uU+cpS5OELUwi395G46bhSV24lTDhmqqokSIKvpbw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 18 Dec 2024 05:18:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-A8uU+cpS5OELUwi395G46bhSV24lTDhmqqokSIKvpbw="
+        }
+      ]
+    },
+    {
+      "Route": "css/battle.css",
+      "AssetFile": "C:\\Users\\Manuel\\Documents\\Brete\\JuanPa\\PROY_U\\repo\\PKMN\\PoyectoPokedexApi\\PoyectoPokedexApi\\wwwroot\\css\\battle.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "356"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"f6Rpptjst7+THVjiJKdfWlTyXjS85oY5meDFHLHJkM0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 18 Dec 2024 04:57:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-f6Rpptjst7+THVjiJKdfWlTyXjS85oY5meDFHLHJkM0="
+        }
+      ]
+    },
+    {
+      "Route": "css/battle.hc8lmm5ocz.css",
+      "AssetFile": "C:\\Users\\Manuel\\Documents\\Brete\\JuanPa\\PROY_U\\repo\\PKMN\\PoyectoPokedexApi\\PoyectoPokedexApi\\wwwroot\\css\\battle.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "356"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"f6Rpptjst7+THVjiJKdfWlTyXjS85oY5meDFHLHJkM0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 18 Dec 2024 04:57:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hc8lmm5ocz"
+        },
+        {
+          "Name": "label",
+          "Value": "css/battle.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-f6Rpptjst7+THVjiJKdfWlTyXjS85oY5meDFHLHJkM0="
+        }
+      ]
+    },
+    {
       "Route": "css/site.css",
       "AssetFile": "C:\\Users\\Manuel\\Documents\\Brete\\JuanPa\\PROY_U\\repo\\PKMN\\PoyectoPokedexApi\\PoyectoPokedexApi\\wwwroot\\css\\site.css",
       "Selectors": [],
@@ -1481,6 +1708,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="
+        }
+      ]
+    },
+    {
+      "Route": "js/battle.0mu5gnd4jf.js",
+      "AssetFile": "C:\\Users\\Manuel\\Documents\\Brete\\JuanPa\\PROY_U\\repo\\PKMN\\PoyectoPokedexApi\\PoyectoPokedexApi\\wwwroot\\js\\battle.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4826"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yDmR7iwznDOLw9I+SIg7NYTHbUncA1VuTrLeyb32XcE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 18 Dec 2024 05:12:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0mu5gnd4jf"
+        },
+        {
+          "Name": "label",
+          "Value": "js/battle.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-yDmR7iwznDOLw9I+SIg7NYTHbUncA1VuTrLeyb32XcE="
+        }
+      ]
+    },
+    {
+      "Route": "js/battle.js",
+      "AssetFile": "C:\\Users\\Manuel\\Documents\\Brete\\JuanPa\\PROY_U\\repo\\PKMN\\PoyectoPokedexApi\\PoyectoPokedexApi\\wwwroot\\js\\battle.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4826"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yDmR7iwznDOLw9I+SIg7NYTHbUncA1VuTrLeyb32XcE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 18 Dec 2024 05:12:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-yDmR7iwznDOLw9I+SIg7NYTHbUncA1VuTrLeyb32XcE="
         }
       ]
     },

@@ -4,4 +4,23 @@
     ViewData["Title"] = "Luchas - Index";
 }
 
-<h1>Luchas - Index</h1>
+<h1>Reto</h1>
+
+<audio id="background-music" src="~/audio/Pokemon.mp3" loop autoplay></audio>
+
+<div id="battle-area" style="position: relative; width: 800px; height: 400px; border: 2px solid black;">
+    <!-- Sprite del primer Pokémon (Jugador 1) -->
+    <img id="pokemon1" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png"
+         style="position: absolute; left: 100px; top: 100px; width: 100px; height: 100px;" alt="Pokemon 1">
+
+    <!-- Sprite del segundo Pokémon (Jugador 2) -->
+    <img id="pokemon2" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png"
+         style="position: absolute; left: 600px; top: 100px; width: 100px; height: 100px;" alt="Pokemon 2">
+</div>
+
+<link rel="stylesheet" href="~/css/battle.css" />
+<script src="~/js/battle.js"></script>
+
+
+
+<script src="~/js/battle.js"></script>

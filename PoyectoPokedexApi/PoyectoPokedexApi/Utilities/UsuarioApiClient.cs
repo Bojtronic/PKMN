@@ -15,6 +15,50 @@ namespace PoyectoPokedexApi.Utilities
             _httpClient = httpClient;
         }
 
+        public async Task<List<UsuarioModel>> ObtenerUsuariosAsync()
+        {
+            // URL del endpoint para obtener los usuarios
+            string url = "https://localhost:7068/Api_Pdx_DbV2/Usuario/VistaUsuariosRoles";
+
+            try
+            {
+                // Realizar la solicitud GET
+                var response = await _httpClient.GetAsync(url);
+
+                // Verificar si la respuesta es exitosa
+                if (response.IsSuccessStatusCode)
+                {
+                    // Leer el cuerpo de la respuesta como string
+                    string responseBody = await response.Content.ReadAsStringAsync();
+
+                    // Deserializar la respuesta directamente a una lista de UsuarioModel
+                    var usuarios = JsonConvert.DeserializeObject<List<UsuarioModel>>(responseBody);
+
+                    if (usuarios == null)
+                    {
+                        Console.WriteLine("No se pudieron deserializar los datos.");
+                        return new List<UsuarioModel>(); // Retornar una lista vacía si no se puede deserializar
+                    }
+
+                    return usuarios; // Retornar la lista de usuarios deserializados
+                }
+                else
+                {
+                    // Manejar el error si la respuesta no es exitosa
+                    Console.WriteLine($"Error: {response.StatusCode} - {response.ReasonPhrase}");
+                    return new List<UsuarioModel>(); // Retornar una lista vacía en caso de error
+                }
+            }
+            catch (Exception ex)
+            {
+                // Manejo de excepciones
+                Console.WriteLine($"Excepción al llamar a la API: {ex.Message}");
+                return new List<UsuarioModel>(); // Retornar una lista vacía en caso de error
+            }
+        }
+
+
+
         public static async Task EjecutarTask()
         {
             // URL de la API
@@ -169,7 +213,7 @@ namespace PoyectoPokedexApi.Utilities
             return response.IsSuccessStatusCode;
         }
 
-        public async Task<bool> CrearUsuarioAsync(CreateModel nuevoUsuario)
+        public async Task<bool> CrearUsuarioAsync(UsuarioModel nuevoUsuario)
         {
             var url = "https://localhost:7068/Api_Pdx_DbV2/Usuario/CrearUsuario";
 
@@ -221,5 +265,51 @@ namespace PoyectoPokedexApi.Utilities
                 return false;
             }
         }
+
+
+        public async Task<bool> EditarUsuarioAsync(int idUsuario, UsuarioModel usuarioModificado)
+        {
+            var url = $"https://localhost:7068/Api_Pdx_DbV2/Usuario/EditarUsuario/{idUsuario}";
+
+            // Serializamos el objeto usuarioModificado en formato JSON
+            var content = new StringContent(JsonConvert.SerializeObject(usuarioModificado), Encoding.UTF8, "application/json");
+
+            try
+            {
+                // Realizamos la solicitud PUT al API de edición de usuario
+                var response = await _httpClient.PutAsync(url, content);
+
+                // Devuelve true si la solicitud fue exitosa
+                return response.IsSuccessStatusCode;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error al editar el usuario: {ex.Message}");
+                return false;
+            }
+        }
+
+
+        public async Task<bool> EliminarUsuarioAsync(int idUsuario)
+        {
+            var url = $"https://localhost:7068/Api_Pdx_DbV2/Usuario/EliminarUsuario/{idUsuario}";
+
+            try
+            {
+                // Realizamos la solicitud DELETE al API de eliminación de usuario
+                var response = await _httpClient.DeleteAsync(url);
+
+                // Devuelve true si la solicitud fue exitosa
+                return response.IsSuccessStatusCode;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error al eliminar el usuario: {ex.Message}");
+                return false;
+            }
+        }
+
+
+
     }
 }
