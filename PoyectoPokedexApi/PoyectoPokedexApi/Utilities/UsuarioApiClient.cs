@@ -15,7 +15,7 @@ namespace PoyectoPokedexApi.Utilities
             _httpClient = httpClient;
         }
 
-        public async Task<List<UsuarioModel>> ObtenerUsuariosAsync()
+        public async Task<List<UsuarioRolViewModel>> ObtenerUsuariosAsync()
         {
             // URL del endpoint para obtener los usuarios
             string url = "https://localhost:7068/Api_Pdx_DbV2/Usuario/VistaUsuariosRoles";
@@ -32,12 +32,12 @@ namespace PoyectoPokedexApi.Utilities
                     string responseBody = await response.Content.ReadAsStringAsync();
 
                     // Deserializar la respuesta directamente a una lista de UsuarioModel
-                    var usuarios = JsonConvert.DeserializeObject<List<UsuarioModel>>(responseBody);
+                    var usuarios = JsonConvert.DeserializeObject<List<UsuarioRolViewModel>>(responseBody);
 
                     if (usuarios == null)
                     {
                         Console.WriteLine("No se pudieron deserializar los datos.");
-                        return new List<UsuarioModel>(); // Retornar una lista vacía si no se puede deserializar
+                        return new List<UsuarioRolViewModel>(); // Retornar una lista vacía si no se puede deserializar
                     }
 
                     return usuarios; // Retornar la lista de usuarios deserializados
@@ -46,14 +46,14 @@ namespace PoyectoPokedexApi.Utilities
                 {
                     // Manejar el error si la respuesta no es exitosa
                     Console.WriteLine($"Error: {response.StatusCode} - {response.ReasonPhrase}");
-                    return new List<UsuarioModel>(); // Retornar una lista vacía en caso de error
+                    return new List<UsuarioRolViewModel>(); // Retornar una lista vacía en caso de error
                 }
             }
             catch (Exception ex)
             {
                 // Manejo de excepciones
                 Console.WriteLine($"Excepción al llamar a la API: {ex.Message}");
-                return new List<UsuarioModel>(); // Retornar una lista vacía en caso de error
+                return new List<UsuarioRolViewModel>(); // Retornar una lista vacía en caso de error
             }
         }
 

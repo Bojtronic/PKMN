@@ -15,7 +15,7 @@ namespace PoyectoPokedexApi.Pages.Pokemon
         }
 
         // Lista de usuarios para mostrar en la vista
-        public List<UsuarioModel> Usuarios { get; set; }
+        public List<UsuarioRolViewModel> Usuarios { get; set; }
 
         // Acción para cargar los usuarios desde la API
         public async Task OnGetAsync()

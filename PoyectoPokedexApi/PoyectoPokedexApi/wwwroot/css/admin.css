@@ -1,0 +1,101 @@
+﻿body {
+    font-family: 'Pokemon GB', Arial, sans-serif;
+    background-color: #f7f9fc;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+h2, h3 {
+    text-align: center;
+    color: #ffcb05; /* Color amarillo inspirado en Pikachu */
+    text-shadow: 2px 2px #3b4cca; /* Sombra azul */
+    margin-bottom: 20px;
+}
+
+#main-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border: 5px solid #3b4cca; /* Azul Pokémon */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+form {
+    margin-bottom: 30px;
+    padding: 15px;
+    background-color: #e3eaf2;
+    border: 2px solid #3b4cca;
+    border-radius: 10px;
+}
+
+    form div {
+        margin-bottom: 15px;
+    }
+
+    form label {
+        font-weight: bold;
+        color: #3b4cca;
+    }
+
+    form input {
+        width: calc(100% - 20px);
+        padding: 10px;
+        margin-top: 5px;
+        border: 2px solid #ffcb05;
+        border-radius: 5px;
+        font-size: 14px;
+    }
+
+    form button {
+        background-color: #ffcb05;
+        color: #3b4cca;
+        font-weight: bold;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        display: block;
+        margin: 0 auto;
+    }
+
+        form button:hover {
+            background-color: #e3a500;
+        }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+    table th, table td {
+        padding: 12px;
+        text-align: left;
+        border: 2px solid #3b4cca;
+    }
+
+    table th {
+        background-color: #ffcb05;
+        color: #3b4cca;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    table tbody tr:nth-child(even) {
+        background-color: #e3eaf2;
+    }
+
+    table tbody tr:hover {
+        background-color: #ffec99;
+    }
+
+.no-users {
+    text-align: center;
+    color: #999;
+    font-style: italic;
+}

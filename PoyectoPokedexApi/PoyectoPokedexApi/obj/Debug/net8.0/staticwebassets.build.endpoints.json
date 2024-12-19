@@ -167,6 +167,88 @@
       ]
     },
     {
+      "Route": "css/admin.css",
+      "AssetFile": "css/admin.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2066"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"idNkRlLKGg5YpjK8Y788pZ5a3H+boNngGofwWZi/5G0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 19 Dec 2024 22:26:48 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-idNkRlLKGg5YpjK8Y788pZ5a3H+boNngGofwWZi/5G0="
+        }
+      ]
+    },
+    {
+      "Route": "css/admin.x2a6fjskv9.css",
+      "AssetFile": "css/admin.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2066"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"idNkRlLKGg5YpjK8Y788pZ5a3H+boNngGofwWZi/5G0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 19 Dec 2024 22:26:48 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "x2a6fjskv9"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-idNkRlLKGg5YpjK8Y788pZ5a3H+boNngGofwWZi/5G0="
+        },
+        {
+          "Name": "label",
+          "Value": "css/admin.css"
+        }
+      ]
+    },
+    {
       "Route": "css/battle.css",
       "AssetFile": "css/battle.css",
       "Selectors": [],

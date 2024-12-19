@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "SmWUCYNwd6wueeDpqofwIKeIwyVijGL88zYFqm0KwW0=",
+  "Hash": "cwmLQFqDuZrCvQ1Bukk7awMfqjZeh8edmwSZuvF/sSE=",
   "Source": "PoyectoPokedexApi",
   "BasePath": "_content/PoyectoPokedexApi",
   "Mode": "Default",
@@ -78,6 +78,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\audio\\Pokemon.mp3"
+    },
+    {
+      "Identity": "C:\\Users\\Manuel\\Documents\\Brete\\JuanPa\\PROY_U\\repo\\PKMN\\PoyectoPokedexApi\\PoyectoPokedexApi\\wwwroot\\css\\admin.css",
+      "SourceId": "PoyectoPokedexApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Manuel\\Documents\\Brete\\JuanPa\\PROY_U\\repo\\PKMN\\PoyectoPokedexApi\\PoyectoPokedexApi\\wwwroot\\",
+      "BasePath": "_content/PoyectoPokedexApi",
+      "RelativePath": "css/admin#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "x2a6fjskv9",
+      "Integrity": "idNkRlLKGg5YpjK8Y788pZ5a3H+boNngGofwWZi/5G0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\admin.css"
     },
     {
       "Identity": "C:\\Users\\Manuel\\Documents\\Brete\\JuanPa\\PROY_U\\repo\\PKMN\\PoyectoPokedexApi\\PoyectoPokedexApi\\wwwroot\\css\\battle.css",
@@ -1504,6 +1525,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-A8uU+cpS5OELUwi395G46bhSV24lTDhmqqokSIKvpbw="
+        }
+      ]
+    },
+    {
+      "Route": "css/admin.css",
+      "AssetFile": "C:\\Users\\Manuel\\Documents\\Brete\\JuanPa\\PROY_U\\repo\\PKMN\\PoyectoPokedexApi\\PoyectoPokedexApi\\wwwroot\\css\\admin.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2066"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"idNkRlLKGg5YpjK8Y788pZ5a3H+boNngGofwWZi/5G0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 19 Dec 2024 22:26:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-idNkRlLKGg5YpjK8Y788pZ5a3H+boNngGofwWZi/5G0="
+        }
+      ]
+    },
+    {
+      "Route": "css/admin.x2a6fjskv9.css",
+      "AssetFile": "C:\\Users\\Manuel\\Documents\\Brete\\JuanPa\\PROY_U\\repo\\PKMN\\PoyectoPokedexApi\\PoyectoPokedexApi\\wwwroot\\css\\admin.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2066"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"idNkRlLKGg5YpjK8Y788pZ5a3H+boNngGofwWZi/5G0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 19 Dec 2024 22:26:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "x2a6fjskv9"
+        },
+        {
+          "Name": "label",
+          "Value": "css/admin.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-idNkRlLKGg5YpjK8Y788pZ5a3H+boNngGofwWZi/5G0="
         }
       ]
     },

@@ -4,88 +4,59 @@
     ViewData["Title"] = "Usuarios";
 }
 
-<h2>Usuarios</h2>
+<head>
+    <link rel="stylesheet" href="~/css/admin.css" />
+</head>
 
-<!-- Formulario para crear un nuevo usuario -->
-<h3>Crear Usuario</h3>
-<form method="post" asp-page-handler="CrearUsuario">
-    <div>
-        <label for="Nombre">Nombre:</label>
-        <input type="text" id="Nombre" name="nuevoUsuario.Nombre" required />
-    </div>
-    <div>
-        <label for="UserName">Nombre de Usuario:</label>
-        <input type="text" id="UserName" name="nuevoUsuario.UserName" required />
-    </div>
-    <div>
-        <label for="Pass">Contraseña:</label>
-        <input type="password" id="Pass" name="nuevoUsuario.Pass" required />
-    </div>
-    <button type="submit">Crear Usuario</button>
-</form>
+<div id="main-container">
 
-<!-- Tabla para listar los usuarios existentes -->
-<h3>Usuarios Existentes</h3>
-<table>
-    <thead>
-        <tr>
-            <th>ID</th>
-            <th>Nombre</th>
-            <th>Nombre de Usuario</th>
-            <th>Contraseña</th>
-            <th>Acciones</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var usuario in Model.Usuarios)
-        {
+    <!-- Formulario para crear un nuevo usuario -->
+    <h3>Crear Usuario</h3>
+    <form method="post" asp-page-handler="CrearUsuario">
+        <div>
+            <label for="Nombre">Nombre:</label>
+            <input type="text" id="Nombre" name="nuevoUsuario.Nombre" required />
+        </div>
+        <div>
+            <label for="UserName">Nombre de Usuario:</label>
+            <input type="text" id="UserName" name="nuevoUsuario.UserName" required />
+        </div>
+        <div>
+            <label for="Pass">Contraseña:</label>
+            <input type="password" id="Pass" name="nuevoUsuario.Pass" required />
+        </div>
+        <button type="submit">Crear Usuario</button>
+    </form>
+
+    <!-- Tabla para listar los usuarios existentes -->
+    <h3>Usuarios Existentes</h3>
+    <table>
+        <thead>
             <tr>
-                <td>@usuario.Id</td>
-                <td>@usuario.Nombre</td>
-                <td>@usuario.UserName</td>
-                <td>********</td> <!-- Ocultar la contraseña -->
-                <td>
-                    <!-- Botón para editar el usuario -->
-                    <button type="button" onclick="setEditValues(@usuario.Id, '@usuario.Nombre', '@usuario.UserName', '@usuario.Pass')">Editar</button>
-                    <!-- Botón para eliminar el usuario -->
-                    <form method="post" asp-page-handler="EliminarUsuario" style="display:inline;">
-                        <input type="hidden" name="idUsuario" value="@usuario.Id" />
-                        <button type="submit">Eliminar</button>
-                    </form>
-                </td>
+                <th>Nombre</th>
+                <th>UserName</th>
+                <th>Descripción</th>
             </tr>
-        }
-    </tbody>
-</table>
+        </thead>
+        <tbody>
+            @if (Model.Usuarios == null || !Model.Usuarios.Any())
+            {
+                <tr>
+                    <td colspan="4" class="no-users">No hay usuarios disponibles.</td>
+                </tr>
+            }
+            else
+            {
+                @foreach (var usuario in Model.Usuarios)
+                {
+                    <tr>
+                        <td>@usuario.Nombre</td>
+                        <td>@usuario.UserName</td>
+                        <td>@usuario.Descripcion</td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+</div>
 
-<!-- Formulario de edición (oculto al principio) -->
-<h3>Editar Usuario</h3>
-<form method="post" asp-page-handler="EditarUsuario" style="display:none;" id="editForm">
-    <input type="hidden" id="IdUsuario" name="idUsuario" />
-    <div>
-        <label for="Nombre">Nombre:</label>
-        <input type="text" id="Nombre" name="usuario.Nombre" required />
-    </div>
-    <div>
-        <label for="UserName">Nombre de Usuario:</label>
-        <input type="text" id="UserName" name="usuario.UserName" required />
-    </div>
-    <div>
-        <label for="Pass">Contraseña:</label>
-        <input type="password" id="Pass" name="usuario.Pass" required />
-    </div>
-    <button type="submit">Editar Usuario</button>
-</form>
-
-<script>
-    // Función para establecer los valores del formulario de edición al hacer clic en el botón de editar
-    function setEditValues(id, nombre, userName, pass) {
-        document.getElementById('IdUsuario').value = id;
-        document.getElementById('Nombre').value = nombre;
-        document.getElementById('UserName').value = userName;
-        document.getElementById('Pass').value = pass;
-
-        // Mostrar el formulario de edición
-        document.getElementById('editForm').style.display = 'block';
-    }
-</script>

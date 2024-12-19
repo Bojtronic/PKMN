@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets\\audio\\Pokemon.mp3"
     },
     {
+      "Id": "C:\\Users\\Manuel\\Documents\\Brete\\JuanPa\\PROY_U\\repo\\PKMN\\PoyectoPokedexApi\\PoyectoPokedexApi\\wwwroot\\css\\admin.css",
+      "PackagePath": "staticwebassets\\css\\admin.css"
+    },
+    {
       "Id": "C:\\Users\\Manuel\\Documents\\Brete\\JuanPa\\PROY_U\\repo\\PKMN\\PoyectoPokedexApi\\PoyectoPokedexApi\\wwwroot\\css\\battle.css",
       "PackagePath": "staticwebassets\\css\\battle.css"
     },

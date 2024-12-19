@@ -1,4 +1,5 @@
 wwwroot\audio\Pokemon.mp3
+wwwroot\css\admin.css
 wwwroot\css\battle.css
 wwwroot\css\site.css
 wwwroot\favicon.ico
