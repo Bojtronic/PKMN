@@ -1,22 +1,58 @@
-﻿// Variables para controlar las posiciones de los Pokémon
+﻿
+// Variables para controlar las posiciones de los Pokémon
 let pokemon1 = document.getElementById('pokemon1');
 let pokemon2 = document.getElementById('pokemon2');
 let battleArea = document.getElementById('battle-area');
+let startBattleButton = document.getElementById('start-battle');
 
-// Posiciones iniciales
-let pokemon1Position = { x: 100, y: 100 };
-let pokemon2Position = { x: 600, y: 100 };
+let pokemon1Id = '';
+let pokemon2Id = '';
 
-// Dimensiones del área de batalla
+
+function asignarPokemon1(id) {
+    pokemon1Id = id; 
+    pokemon1.src = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemon1Id}.png`;
+}
+
+
+function asignarPokemon2(id) {
+    pokemon2Id = id;
+    pokemon2.src = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemon2Id}.png`;
+}
+
+
+startBattleButton.addEventListener('click', () => {
+    pokemon1.src = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemon1Id}.png`;
+    pokemon2.src = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemon2Id}.png`;
+
+    console.log(`Jugador 1 eligió Pokémon ID: ${pokemon1Id}`);
+    console.log(`Jugador 2 eligió Pokémon ID: ${pokemon2Id}`);
+});
+
+
+function getInitialPositions() {
+    const battleAreaWidth = battleArea.offsetWidth;
+    const battleAreaHeight = battleArea.offsetHeight;
+
+    return {
+        pokemon1Position: { x: 100, y: battleAreaHeight / 2 - 50 }, 
+        pokemon2Position: { x: battleAreaWidth - 100, y: battleAreaHeight / 2 - 50 } 
+    };
+}
+
+
+let { pokemon1Position, pokemon2Position } = getInitialPositions();
+
+
 const battleAreaBounds = {
     width: battleArea.offsetWidth,
     height: battleArea.offsetHeight
 };
 
-// Dimensiones de los Pokémon
+
 const pokemonSize = { width: 100, height: 100 };
 
-// Movimiento con teclas
+
 document.addEventListener('keydown', function (event) {
     const key = event.key;
 
@@ -107,3 +143,4 @@ function launchAttack(attackerPosition, defenderPosition, attackerId) {
 function launchAttackEffect(defenderPosition, attackerId) {
     console.log(`${attackerId} ha golpeado a su oponente en (${defenderPosition.x}, ${defenderPosition.y})`);
 }
+
