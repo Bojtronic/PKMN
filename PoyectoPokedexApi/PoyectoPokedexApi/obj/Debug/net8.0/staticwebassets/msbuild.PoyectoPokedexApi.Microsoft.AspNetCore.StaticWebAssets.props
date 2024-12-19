@@ -30,8 +30,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>hc8lmm5ocz</Fingerprint>
-      <Integrity>f6Rpptjst7+THVjiJKdfWlTyXjS85oY5meDFHLHJkM0=</Integrity>
+      <Fingerprint>np81j19nf2</Fingerprint>
+      <Integrity>W8nYw6OH4fIQAbxtxAWTpbGESQWJEQUt6aUADW9eyR0=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\battle.css'))</OriginalItemSpec>
@@ -72,6 +72,42 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\favicon.ico'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\fondo_batalla.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>PoyectoPokedexApi</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/PoyectoPokedexApi</BasePath>
+      <RelativePath>images/fondo_batalla.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>vdrm35uymy</Fingerprint>
+      <Integrity>I6s45dYbhQw5a6KlzgnbhiP0OrE3G2YDAdFIfG5P+QA=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\fondo_batalla.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\fondo_estadio.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>PoyectoPokedexApi</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/PoyectoPokedexApi</BasePath>
+      <RelativePath>images/fondo_estadio.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>y4w3qmpgtn</Fingerprint>
+      <Integrity>csdMsW7iDIhqROBvkFl8e84wxOaKuDMI4W/sKCkspWI=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\fondo_estadio.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\battle.js'))">
       <SourceType>Package</SourceType>
       <SourceId>PoyectoPokedexApi</SourceId>
@@ -84,8 +120,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>3s2d7erfrv</Fingerprint>
-      <Integrity>Ux6V1RvXZ4weumKvkd0eXpjjk3LzDdk3P1Z3Z9xQ5tk=</Integrity>
+      <Fingerprint>aoy9ad1kpk</Fingerprint>
+      <Integrity>ysXWJS9dz8J5Xi0FCuh/WLyXPSQNCkILBsShVy8kQtI=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\battle.js'))</OriginalItemSpec>

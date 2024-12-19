@@ -181,7 +181,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "356"
+          "Value": "601"
         },
         {
           "Name": "Content-Type",
@@ -189,22 +189,22 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"f6Rpptjst7+THVjiJKdfWlTyXjS85oY5meDFHLHJkM0=\""
+          "Value": "\"W8nYw6OH4fIQAbxtxAWTpbGESQWJEQUt6aUADW9eyR0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 05:30:52 GMT"
+          "Value": "Thu, 19 Dec 2024 07:49:25 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-f6Rpptjst7+THVjiJKdfWlTyXjS85oY5meDFHLHJkM0="
+          "Value": "sha256-W8nYw6OH4fIQAbxtxAWTpbGESQWJEQUt6aUADW9eyR0="
         }
       ]
     },
     {
-      "Route": "css/battle.hc8lmm5ocz.css",
+      "Route": "css/battle.np81j19nf2.css",
       "AssetFile": "css/battle.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -218,7 +218,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "356"
+          "Value": "601"
         },
         {
           "Name": "Content-Type",
@@ -226,21 +226,21 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"f6Rpptjst7+THVjiJKdfWlTyXjS85oY5meDFHLHJkM0=\""
+          "Value": "\"W8nYw6OH4fIQAbxtxAWTpbGESQWJEQUt6aUADW9eyR0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 05:30:52 GMT"
+          "Value": "Thu, 19 Dec 2024 07:49:25 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "hc8lmm5ocz"
+          "Value": "np81j19nf2"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-f6Rpptjst7+THVjiJKdfWlTyXjS85oY5meDFHLHJkM0="
+          "Value": "sha256-W8nYw6OH4fIQAbxtxAWTpbGESQWJEQUt6aUADW9eyR0="
         },
         {
           "Name": "label",
@@ -413,7 +413,171 @@
       ]
     },
     {
-      "Route": "js/battle.3s2d7erfrv.js",
+      "Route": "images/fondo_batalla.jpg",
+      "AssetFile": "images/fondo_batalla.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "66701"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"I6s45dYbhQw5a6KlzgnbhiP0OrE3G2YDAdFIfG5P+QA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 19 Dec 2024 07:26:17 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-I6s45dYbhQw5a6KlzgnbhiP0OrE3G2YDAdFIfG5P+QA="
+        }
+      ]
+    },
+    {
+      "Route": "images/fondo_batalla.vdrm35uymy.jpg",
+      "AssetFile": "images/fondo_batalla.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "66701"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"I6s45dYbhQw5a6KlzgnbhiP0OrE3G2YDAdFIfG5P+QA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 19 Dec 2024 07:26:17 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vdrm35uymy"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-I6s45dYbhQw5a6KlzgnbhiP0OrE3G2YDAdFIfG5P+QA="
+        },
+        {
+          "Name": "label",
+          "Value": "images/fondo_batalla.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "images/fondo_estadio.jpg",
+      "AssetFile": "images/fondo_estadio.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "256479"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"csdMsW7iDIhqROBvkFl8e84wxOaKuDMI4W/sKCkspWI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 19 Dec 2024 07:33:53 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-csdMsW7iDIhqROBvkFl8e84wxOaKuDMI4W/sKCkspWI="
+        }
+      ]
+    },
+    {
+      "Route": "images/fondo_estadio.y4w3qmpgtn.jpg",
+      "AssetFile": "images/fondo_estadio.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "256479"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"csdMsW7iDIhqROBvkFl8e84wxOaKuDMI4W/sKCkspWI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 19 Dec 2024 07:33:53 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "y4w3qmpgtn"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-csdMsW7iDIhqROBvkFl8e84wxOaKuDMI4W/sKCkspWI="
+        },
+        {
+          "Name": "label",
+          "Value": "images/fondo_estadio.jpg"
+        }
+      ]
+    },
+    {
+      "Route": "js/battle.aoy9ad1kpk.js",
       "AssetFile": "js/battle.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -427,7 +591,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "6411"
+          "Value": "5916"
         },
         {
           "Name": "Content-Type",
@@ -435,21 +599,21 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Ux6V1RvXZ4weumKvkd0eXpjjk3LzDdk3P1Z3Z9xQ5tk=\""
+          "Value": "\"ysXWJS9dz8J5Xi0FCuh/WLyXPSQNCkILBsShVy8kQtI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 07:00:10 GMT"
+          "Value": "Thu, 19 Dec 2024 07:15:43 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "3s2d7erfrv"
+          "Value": "aoy9ad1kpk"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-Ux6V1RvXZ4weumKvkd0eXpjjk3LzDdk3P1Z3Z9xQ5tk="
+          "Value": "sha256-ysXWJS9dz8J5Xi0FCuh/WLyXPSQNCkILBsShVy8kQtI="
         },
         {
           "Name": "label",
@@ -472,7 +636,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "6411"
+          "Value": "5916"
         },
         {
           "Name": "Content-Type",
@@ -480,17 +644,17 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Ux6V1RvXZ4weumKvkd0eXpjjk3LzDdk3P1Z3Z9xQ5tk=\""
+          "Value": "\"ysXWJS9dz8J5Xi0FCuh/WLyXPSQNCkILBsShVy8kQtI=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 07:00:10 GMT"
+          "Value": "Thu, 19 Dec 2024 07:15:43 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Ux6V1RvXZ4weumKvkd0eXpjjk3LzDdk3P1Z3Z9xQ5tk="
+          "Value": "sha256-ysXWJS9dz8J5Xi0FCuh/WLyXPSQNCkILBsShVy8kQtI="
         }
       ]
     },

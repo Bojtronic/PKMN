@@ -21,6 +21,14 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\Manuel\\Documents\\Brete\\JuanPa\\PROY_U\\repo\\PKMN\\PoyectoPokedexApi\\PoyectoPokedexApi\\wwwroot\\images\\fondo_batalla.jpg",
+      "PackagePath": "staticwebassets\\images\\fondo_batalla.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Manuel\\Documents\\Brete\\JuanPa\\PROY_U\\repo\\PKMN\\PoyectoPokedexApi\\PoyectoPokedexApi\\wwwroot\\images\\fondo_estadio.jpg",
+      "PackagePath": "staticwebassets\\images\\fondo_estadio.jpg"
+    },
+    {
       "Id": "C:\\Users\\Manuel\\Documents\\Brete\\JuanPa\\PROY_U\\repo\\PKMN\\PoyectoPokedexApi\\PoyectoPokedexApi\\wwwroot\\js\\battle.js",
       "PackagePath": "staticwebassets\\js\\battle.js"
     },
