@@ -708,7 +708,7 @@
         }
       }
     },
-    "/Api_Pdx_DbV2/UsuarioPkm/AgregarPkm/{idUsuario}/{idPkm}": {
+    "/Api_Pdx_DbV2/UsuarioPkm/AgregarPkm/{idUsuario}/{idPkm}/{estado}": {
       "post": {
         "tags": [
           "UsuarioPkm"
@@ -725,6 +725,15 @@
           },
           {
             "name": "idPkm",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "estado",
             "in": "path",
             "required": true,
             "schema": {

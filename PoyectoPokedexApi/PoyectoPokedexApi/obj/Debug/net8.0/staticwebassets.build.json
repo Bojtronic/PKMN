@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "b/UW/snPaGuhEdBf/lNWd/BPBF8lWvXrOOa05RqoUrQ=",
+  "Hash": "WazryCkRdVoA/97rj7PNKLFLujSuS91hmoTz8n5qmLU=",
   "Source": "PoyectoPokedexApi",
   "BasePath": "_content/PoyectoPokedexApi",
   "Mode": "Default",
@@ -220,8 +220,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "pdaass0jnr",
-      "Integrity": "DZ+Q7ioFg2UIc5SqcfRdZOPBZxYf/IFDbTsBzudR4TY=",
+      "Fingerprint": "l818ituc9j",
+      "Integrity": "RX77b7lgr2hTDHQh3ybrroCURKOBcPe8BxPN4dsAGb4=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\battle.js"
@@ -2031,7 +2031,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "10968"
+          "Value": "12238"
         },
         {
           "Name": "Content-Type",
@@ -2039,11 +2039,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"DZ+Q7ioFg2UIc5SqcfRdZOPBZxYf/IFDbTsBzudR4TY=\""
+          "Value": "\"RX77b7lgr2hTDHQh3ybrroCURKOBcPe8BxPN4dsAGb4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 08:21:00 GMT"
+          "Value": "Fri, 20 Dec 2024 21:39:19 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2053,12 +2053,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-DZ+Q7ioFg2UIc5SqcfRdZOPBZxYf/IFDbTsBzudR4TY="
+          "Value": "sha256-RX77b7lgr2hTDHQh3ybrroCURKOBcPe8BxPN4dsAGb4="
         }
       ]
     },
     {
-      "Route": "js/battle.pdaass0jnr.js",
+      "Route": "js/battle.l818ituc9j.js",
       "AssetFile": "C:\\Users\\Manuel\\Documents\\Brete\\JuanPa\\PROY_U\\repo\\PKMN\\PoyectoPokedexApi\\PoyectoPokedexApi\\wwwroot\\js\\battle.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -2068,7 +2068,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "10968"
+          "Value": "12238"
         },
         {
           "Name": "Content-Type",
@@ -2076,11 +2076,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"DZ+Q7ioFg2UIc5SqcfRdZOPBZxYf/IFDbTsBzudR4TY=\""
+          "Value": "\"RX77b7lgr2hTDHQh3ybrroCURKOBcPe8BxPN4dsAGb4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 08:21:00 GMT"
+          "Value": "Fri, 20 Dec 2024 21:39:19 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2090,7 +2090,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "pdaass0jnr"
+          "Value": "l818ituc9j"
         },
         {
           "Name": "label",
@@ -2098,7 +2098,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-DZ+Q7ioFg2UIc5SqcfRdZOPBZxYf/IFDbTsBzudR4TY="
+          "Value": "sha256-RX77b7lgr2hTDHQh3ybrroCURKOBcPe8BxPN4dsAGb4="
         }
       ]
     },

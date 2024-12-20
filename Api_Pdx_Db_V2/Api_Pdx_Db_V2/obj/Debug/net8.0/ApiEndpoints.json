@@ -429,7 +429,7 @@
   {
     "ContainingType": "Api_Pdx_Db_V2.Controllers.UsuarioPkmController",
     "Method": "AgregarUsuarioPkm",
-    "RelativePath": "Api_Pdx_DbV2/UsuarioPkm/AgregarPkm/{idUsuario}/{idPkm}",
+    "RelativePath": "Api_Pdx_DbV2/UsuarioPkm/AgregarPkm/{idUsuario}/{idPkm}/{estado}",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -441,6 +441,11 @@
       },
       {
         "Name": "idPkm",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "estado",
         "Type": "System.Int32",
         "IsRequired": true
       }

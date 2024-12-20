@@ -138,8 +138,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>pdaass0jnr</Fingerprint>
-      <Integrity>DZ+Q7ioFg2UIc5SqcfRdZOPBZxYf/IFDbTsBzudR4TY=</Integrity>
+      <Fingerprint>l818ituc9j</Fingerprint>
+      <Integrity>RX77b7lgr2hTDHQh3ybrroCURKOBcPe8BxPN4dsAGb4=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\battle.js'))</OriginalItemSpec>

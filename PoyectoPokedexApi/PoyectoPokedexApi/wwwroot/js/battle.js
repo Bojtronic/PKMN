@@ -8,6 +8,9 @@ let pokemon1LivesCount = document.getElementById('pokemon1-lives-count');
 let pokemon2LivesCount = document.getElementById('pokemon2-lives-count');
 let timerCountElement = document.getElementById('timer-count');
 
+let usuario_id = document.getElementById('usuario_id');
+
+
 let pokemon1Id = '';
 let pokemon2Id = '';
 
@@ -15,6 +18,12 @@ let pokemon1Lives = 10;
 let pokemon2Lives = 10;
 let timerCount = 60;
 let timerInterval;
+
+// El valor del input oculto indica el perdedor o si es empate
+const hiddenInput = document.getElementById('hidden-input');
+
+// indica si la batalla terminó
+const hiddenFinish = document.getElementById('hidden-finish');
 
 const battleAreaBounds = {
     width: battleArea.offsetWidth,
@@ -129,18 +138,20 @@ function checkBattleOutcome() {
         battleArea.style.backgroundImage = 'none';
         battleArea.style.backgroundColor = '#000';
 
-        // El valor del input oculto indica el perdedor o si es empate
-        const hiddenInput = document.getElementById('hidden-input'); // Obtener el input oculto
+        // Determinar el resultado
         if (pokemon1Lives > pokemon2Lives) {
-            hiddenInput.value = 2; // Jugador 1 gana, el valor es 2
+            hiddenInput.value = 2; // Jugador 1 gana
         } else if (pokemon2Lives > pokemon1Lives) {
-            hiddenInput.value = 1; // Jugador 2 gana, el valor es 1
+            hiddenInput.value = 1; // Jugador 2 gana
         } else {
-            hiddenInput.value = 0; // Empate, el valor es 0
+            hiddenInput.value = 0; // Empate
         }
+
+        hiddenFinish.value = 1;  // Indica que la batalla terminó
 
         backgroundMusic.pause();
 
+        // Mostrar mensaje de resultado
         let resultMessage = document.createElement('div');
         resultMessage.style.position = 'absolute';
         resultMessage.style.top = '50%';
@@ -179,8 +190,40 @@ function checkBattleOutcome() {
         } else {
             battleArea.appendChild(resultMessage);
         }
+
+        const idUsuario = usuario_id.value;
+        const idPkm = hiddenInput.value;  
+
+        const url = `https://localhost:7068/Api_Pdx_DbV2/UsuarioPkm/AgregarPkm/${idUsuario}/${idPkm}/3`;
+
+        fetch(url, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                id: 0,
+                idUsuario: idUsuario,
+                pkm_id: idPkm,
+                nombre: `${loser} perdió contra ${winner}`,
+                estado: 3,
+            }),
+        })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! Status: ${response.status}`);
+                }
+                return response.json();
+            })
+            .then(data => {
+                console.log('Resultado guardado:', data);
+            })
+            .catch(error => {
+                console.error('Error al guardar el resultado:', error);
+            });
     }
 }
+
 
 
 function reduceLife(pokemonId) {

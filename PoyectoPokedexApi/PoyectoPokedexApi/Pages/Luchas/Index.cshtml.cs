@@ -24,6 +24,12 @@ namespace PoyectoPokedexApi.Pages.Luchas
         [BindProperty]
         public int Pokemon2Id { get; set; }
 
+        [BindProperty]
+        public int HiddenInput { get; set; } //este valor indica si perdió el jugador 1 o el 2, si hay empate es cero. con esto se decide el estado para ir a enfermeria
+
+        [BindProperty]
+        public int HiddenFinish { get; set; } //si está en 1 indica que la batalla termino
+
 
         public void OnPostAsignarPokemon_1(int pokemonId)
         {
@@ -98,5 +104,8 @@ namespace PoyectoPokedexApi.Pages.Luchas
                 // Aquí puedes redirigir a una página de error o mostrar un mensaje
             }
         }
+
+        
+
     }
 }

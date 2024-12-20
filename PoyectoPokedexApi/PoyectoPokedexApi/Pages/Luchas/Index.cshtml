@@ -4,7 +4,12 @@
     ViewData["Title"] = "Luchas - Index";
 }
 
-<input type="number" id="hidden-input" class="hidden" value="0">
+<input type="hidden" id="hidden-finish" name="HiddenFinish" value="0">
+<input type="hidden" id="hidden-input" name="HiddenInput" value="0">
+
+<input type="hidden" id="usuario_id" name="usuario_id" value="@Model.Usuario?.Id">
+
+
 
 <audio id="background-music" src="~/audio/Pokemon.mp3" loop></audio>
 

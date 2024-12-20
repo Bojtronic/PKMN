@@ -33,8 +33,8 @@ namespace Api_Pdx_Db_V2.Controllers
             return Ok(datos);
         }
 
-        [HttpPost("AgregarPkm/{idUsuario}/{idPkm}")]
-        public async Task<IActionResult> AgregarUsuarioPkm(int idUsuario, int idPkm, [FromServices] PokeCliet pokeCliet)
+        [HttpPost("AgregarPkm/{idUsuario}/{idPkm}/{estado}")]
+        public async Task<IActionResult> AgregarUsuarioPkm(int idUsuario, int idPkm, int estado, [FromServices] PokeCliet pokeCliet)
         {
             if (idUsuario <= 0 || idPkm <= 0)
             {
@@ -65,7 +65,7 @@ namespace Api_Pdx_Db_V2.Controllers
                     IdUsuario = idUsuario,
                     pkm_id = pokemonData.id,
                     nombre = pokemonData.name,
-                    estado = 1 // Este valor será siempre 1
+                    estado = estado
                 };
 
                 // Insertar el nuevo UsuarioPkm en la base de datos
@@ -73,7 +73,8 @@ namespace Api_Pdx_Db_V2.Controllers
                 await _conexionContext.SaveChangesAsync();
 
                 // Devolver la respuesta con el objeto recién creado
-                return Ok("Pokémon agregado correctamente");
+                //return Ok("Pokémon agregado correctamente");
+                return Ok(new { message = "Pokémon agregado correctamente" });
             }
             catch (Exception ex)
             {
