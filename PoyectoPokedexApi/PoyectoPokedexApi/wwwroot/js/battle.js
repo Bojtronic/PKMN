@@ -16,18 +16,30 @@ let pokemon2Lives = 10;
 let timerCount = 60;
 
 
+function getInitialPositions() {
+    const battleAreaWidth = battleArea.offsetWidth;
+    const battleAreaHeight = battleArea.offsetHeight;
 
+    return {
+        pokemon1Position: { x: 100, y: battleAreaHeight / 2 - 50 },
+        pokemon2Position: { x: battleAreaWidth - 100, y: battleAreaHeight / 2 - 50 }
+    };
+}
+
+
+let { pokemon1Position, pokemon2Position } = getInitialPositions();
 
 
 function asignarPokemon1(id) {
     pokemon1Id = id; 
     pokemon1.src = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemon1Id}.png`;
+    pokemon1.classList.add('flipped');
 }
-
 
 function asignarPokemon2(id) {
     pokemon2Id = id;
     pokemon2.src = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemon2Id}.png`;
+    pokemon2.classList.remove('flipped');
 }
 
 
@@ -48,6 +60,8 @@ startBattleButton.addEventListener('click', () => {
 
         if (timerCount <= 0) {
             clearInterval(timerInterval);
+            timerCount = 0;
+            timerCountElement.textContent = timerCount;
             alert(
                 pokemon1Lives > pokemon2Lives
                     ? '¡Jugador 1 gana!'
@@ -60,18 +74,7 @@ startBattleButton.addEventListener('click', () => {
 });
 
 
-function getInitialPositions() {
-    const battleAreaWidth = battleArea.offsetWidth;
-    const battleAreaHeight = battleArea.offsetHeight;
 
-    return {
-        pokemon1Position: { x: 100, y: battleAreaHeight / 2 - 50 }, 
-        pokemon2Position: { x: battleAreaWidth - 100, y: battleAreaHeight / 2 - 50 } 
-    };
-}
-
-
-let { pokemon1Position, pokemon2Position } = getInitialPositions();
 
 
 const battleAreaBounds = {
@@ -81,46 +84,6 @@ const battleAreaBounds = {
 
 
 const pokemonSize = { width: 100, height: 100 };
-
-
-document.addEventListener('keydown', function (event) {
-    const key = event.key;
-
-    // Movimiento de Pokémon 1 (A, D, W, S)
-    if (key === 'a') {
-        pokemon1Position.x = Math.max(0, pokemon1Position.x - 10); // No salir por la izquierda
-    } else if (key === 'd') {
-        pokemon1Position.x = Math.min(battleAreaBounds.width - pokemonSize.width, pokemon1Position.x + 10); // No salir por la derecha
-    } else if (key === 'w') {
-        pokemon1Position.y = Math.max(0, pokemon1Position.y - 10); // No salir por arriba
-    } else if (key === 's') {
-        pokemon1Position.y = Math.min(battleAreaBounds.height - pokemonSize.height, pokemon1Position.y + 10); // No salir por abajo
-    }
-
-    // Movimiento de Pokémon 2 (Flechas)
-    if (key === 'ArrowLeft') {
-        pokemon2Position.x = Math.max(0, pokemon2Position.x - 10);
-    } else if (key === 'ArrowRight') {
-        pokemon2Position.x = Math.min(battleAreaBounds.width - pokemonSize.width, pokemon2Position.x + 10);
-    } else if (key === 'ArrowUp') {
-        pokemon2Position.y = Math.max(0, pokemon2Position.y - 10);
-    } else if (key === 'ArrowDown') {
-        pokemon2Position.y = Math.min(battleAreaBounds.height - pokemonSize.height, pokemon2Position.y + 10);
-    }
-
-    // Lanzar ataque (tecla Q para Pokémon 1, tecla Enter para Pokémon 2)
-    if (key === 'q') {
-        launchAttack(pokemon1Position, pokemon2Position, 'pokemon1');
-    } else if (key === 'Enter') {
-        launchAttack(pokemon2Position, pokemon1Position, 'pokemon2');
-    }
-
-    // Actualizar posiciones de los Pokémon
-    pokemon1.style.left = pokemon1Position.x + 'px';
-    pokemon1.style.top = pokemon1Position.y + 'px';
-    pokemon2.style.left = pokemon2Position.x + 'px';
-    pokemon2.style.top = pokemon2Position.y + 'px';
-});
 
 // Función para lanzar un ataque
 function launchAttack(attackerPosition, defenderPosition, attackerId) {
@@ -170,6 +133,60 @@ function launchAttack(attackerPosition, defenderPosition, attackerId) {
 }
 
 
+document.addEventListener('keydown', function (event) {
+    const key = event.key;
+
+    // Movimiento de Pokémon 1 (A, D, W, S)
+    if (key === 'a') {
+        pokemon1Position.x = Math.max(0, pokemon1Position.x - 10); // No salir por la izquierda
+        pokemon1.classList.remove('flipped');
+    } else if (key === 'd') {
+        pokemon1Position.x = Math.min(battleAreaBounds.width - pokemonSize.width, pokemon1Position.x + 10); // No salir por la derecha
+        pokemon1.classList.add('flipped');
+    } else if (key === 'w') {
+        pokemon1Position.y = Math.max(0, pokemon1Position.y - 10); // No salir por arriba
+    } else if (key === 's') {
+        pokemon1Position.y = Math.min(battleAreaBounds.height - pokemonSize.height, pokemon1Position.y + 10); // No salir por abajo
+    }
+
+    // Movimiento de Pokémon 2 (Flechas)
+    if (key === 'ArrowLeft') {
+        pokemon2Position.x = Math.max(0, pokemon2Position.x - 10);
+        pokemon2.classList.remove('flipped');
+    } else if (key === 'ArrowRight') {
+        pokemon2Position.x = Math.min(battleAreaBounds.width - pokemonSize.width, pokemon2Position.x + 10);
+        pokemon2.classList.add('flipped');
+    } else if (key === 'ArrowUp') {
+        pokemon2Position.y = Math.max(0, pokemon2Position.y - 10);
+    } else if (key === 'ArrowDown') {
+        pokemon2Position.y = Math.min(battleAreaBounds.height - pokemonSize.height, pokemon2Position.y + 10);
+    }
+
+    // Lanzar ataque (tecla Q para Pokémon 1, tecla Enter para Pokémon 2)
+    if (key === 'q') {
+        launchAttack(pokemon1Position, pokemon2Position, 'pokemon1');
+    } else if (key === 'Enter') {
+        launchAttack(pokemon2Position, pokemon1Position, 'pokemon2');
+    }
+
+    // Actualizar posiciones de los Pokémon
+    pokemon1.style.left = pokemon1Position.x + 'px';
+    pokemon1.style.top = pokemon1Position.y + 'px';
+    pokemon2.style.left = pokemon2Position.x + 'px';
+    pokemon2.style.top = pokemon2Position.y + 'px';
+});
+
+
+function checkBattleOutcome() {
+    if (pokemon1Lives <= 0 || pokemon2Lives <= 0) {
+        clearInterval(timerInterval);
+        alert(
+            pokemon1Lives > pokemon2Lives
+                ? '¡Jugador 1 gana!'
+                : '¡Jugador 2 gana!'
+        );
+    }
+}
 
 function reduceLife(pokemonId) {
     if (pokemonId === 'pokemon1') {
@@ -183,16 +200,6 @@ function reduceLife(pokemonId) {
     checkBattleOutcome();
 }
 
-function checkBattleOutcome() {
-    if (pokemon1Lives <= 0 || pokemon2Lives <= 0) {
-        clearInterval(timerInterval);
-        alert(
-            pokemon1Lives > pokemon2Lives
-                ? '¡Jugador 1 gana!'
-                : '¡Jugador 2 gana!'
-        );
-    }
-}
 
 
 // función de colisión para reducir vidas

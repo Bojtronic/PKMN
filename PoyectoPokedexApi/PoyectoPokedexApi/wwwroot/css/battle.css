@@ -30,3 +30,7 @@
     color: red;
     font-size: 24px;
 }
+
+.flipped {
+    transform: scaleX(-1); /* Gira horizontalmente */
+}
