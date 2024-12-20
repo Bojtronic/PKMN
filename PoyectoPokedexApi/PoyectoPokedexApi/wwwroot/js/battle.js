@@ -1,12 +1,22 @@
-﻿
-// Variables para controlar las posiciones de los Pokémon
-let pokemon1 = document.getElementById('pokemon1');
+﻿let pokemon1 = document.getElementById('pokemon1');
 let pokemon2 = document.getElementById('pokemon2');
 let battleArea = document.getElementById('battle-area');
 let startBattleButton = document.getElementById('start-battle');
+const backgroundMusic = document.getElementById('background-music');
+
+let pokemon1LivesCount = document.getElementById('pokemon1-lives-count');
+let pokemon2LivesCount = document.getElementById('pokemon2-lives-count');
+let timerCountElement = document.getElementById('timer-count');
 
 let pokemon1Id = '';
 let pokemon2Id = '';
+
+let pokemon1Lives = 10;
+let pokemon2Lives = 10;
+let timerCount = 60;
+
+
+
 
 
 function asignarPokemon1(id) {
@@ -25,8 +35,28 @@ startBattleButton.addEventListener('click', () => {
     pokemon1.src = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemon1Id}.png`;
     pokemon2.src = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemon2Id}.png`;
 
-    console.log(`Jugador 1 eligió Pokémon ID: ${pokemon1Id}`);
-    console.log(`Jugador 2 eligió Pokémon ID: ${pokemon2Id}`);
+    startBattleButton.style.backgroundColor = 'red';
+    startBattleButton.style.color = 'white';
+    startBattleButton.innerText = '¡Batalla Iniciada!';
+
+    backgroundMusic.play();
+
+    // Cronómetro
+    let timerInterval = setInterval(() => {
+        timerCount--;
+        timerCountElement.textContent = timerCount;
+
+        if (timerCount <= 0) {
+            clearInterval(timerInterval);
+            alert(
+                pokemon1Lives > pokemon2Lives
+                    ? '¡Jugador 1 gana!'
+                    : pokemon1Lives < pokemon2Lives
+                        ? '¡Jugador 2 gana!'
+                        : '¡Es un empate!'
+            );
+        }
+    }, 1000);
 });
 
 
@@ -139,8 +169,39 @@ function launchAttack(attackerPosition, defenderPosition, attackerId) {
     }, 20);
 }
 
-// Función para manejar el efecto de colisión
+
+
+function reduceLife(pokemonId) {
+    if (pokemonId === 'pokemon1') {
+        pokemon1Lives--;
+        pokemon1LivesCount.textContent = pokemon1Lives;
+    } else if (pokemonId === 'pokemon2') {
+        pokemon2Lives--;
+        pokemon2LivesCount.textContent = pokemon2Lives;
+    }
+
+    checkBattleOutcome();
+}
+
+function checkBattleOutcome() {
+    if (pokemon1Lives <= 0 || pokemon2Lives <= 0) {
+        clearInterval(timerInterval);
+        alert(
+            pokemon1Lives > pokemon2Lives
+                ? '¡Jugador 1 gana!'
+                : '¡Jugador 2 gana!'
+        );
+    }
+}
+
+
+// función de colisión para reducir vidas
 function launchAttackEffect(defenderPosition, attackerId) {
     console.log(`${attackerId} ha golpeado a su oponente en (${defenderPosition.x}, ${defenderPosition.y})`);
+    if (attackerId === 'pokemon1') {
+        reduceLife('pokemon2');
+    } else {
+        reduceLife('pokemon1');
+    }
 }
 

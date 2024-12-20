@@ -5,7 +5,7 @@
 }
 
 
-<audio id="background-music" src="~/audio/Pokemon.mp3" loop autoplay></audio>
+<audio id="background-music" src="~/audio/Pokemon.mp3" loop></audio>
 
 <div style="display: flex; justify-content: space-between; margin-bottom: 10px; flex-wrap: wrap;">
     <!-- Nombre del Jugador 1 -->
@@ -33,7 +33,7 @@
                                     </td>
                                     <td>@pkm.name</td>
                                     <td>
-                                        <button type="button" class="btn btn-success" onclick="asignarPokemon1(@pkm.id)">Seleccionar</button>
+                                        <button type="button" class="btn btn-secondary" onclick="asignarPokemon1(@pkm.id)">Seleccionar</button>
                                     </td>
                                 </tr>
                             }
@@ -45,7 +45,7 @@
         }
         else
         {
-            <p>No tienes Pokémon en tu Pokedex.</p>
+            <p>No hay ningun Pokémon en el Pokedex</p>
         }
     </div>
 
@@ -77,7 +77,7 @@
                                     </td>
                                     <td>@pkm.name</td>
                                     <td>
-                                        <button type="button" class="btn btn-success" onclick="asignarPokemon2(@pkm.id)">Seleccionar</button>
+                                        <button type="button" class="btn btn-secondary" onclick="asignarPokemon2(@pkm.id)">Seleccionar</button>
                                     </td>
                                 </tr>
                             }
@@ -89,10 +89,16 @@
         }
         else
         {
-            <p>No tienes Pokémon en tu Pokedex.</p>
+            <p>No hay ningun Pokémon en el Pokedex</p>
         }
     </div>
 </div>
+
+
+<div style="display: flex; justify-content: center; margin-top: 10px;">
+    <button id="start-battle">Iniciar Batalla</button>
+</div>
+
 
 <!-- Área de Batalla -->
 <div id="battle-area" style="position: relative; width: 800px; height: 400px; border: 2px solid black; flex: 1; min-width: 800px;">
@@ -105,9 +111,21 @@
 
 </div>
 
-<div style="display: flex; justify-content: center; margin-top: 10px;">
-    <button id="start-battle">Iniciar Batalla</button>
+
+<div style="display: flex; justify-content: center; align-items: center; margin-top: 20px;">
+    <div id="pokemon1-lives" style="flex: 1; text-align: center;">
+        <p>Vidas Jugador 1: <span id="pokemon1-lives-count">10</span></p>
+    </div>
+    <div id="battle-timer" style="flex: 1; text-align: center;">
+        <p>Tiempo restante: <span id="timer-count">60</span> s</p>
+    </div>
+    <div id="pokemon2-lives" style="flex: 1; text-align: center;">
+        <p>Vidas Jugador 2: <span id="pokemon2-lives-count">10</span></p>
+    </div>
 </div>
+
+
+
 
 <link rel="stylesheet" href="~/css/battle.css" />
 <script src="~/js/battle.js"></script>

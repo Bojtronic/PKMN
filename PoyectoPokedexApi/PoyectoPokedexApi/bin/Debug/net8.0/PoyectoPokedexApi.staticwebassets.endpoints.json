@@ -249,6 +249,51 @@
       ]
     },
     {
+      "Route": "css/battle.7cm1v7vay0.css",
+      "AssetFile": "css/battle.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "784"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qW1Wl0e2xPfr8IsoIHTrcI/IU0PKGdSe3+lRA+8zD4U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 20 Dec 2024 01:23:50 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7cm1v7vay0"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-qW1Wl0e2xPfr8IsoIHTrcI/IU0PKGdSe3+lRA+8zD4U="
+        },
+        {
+          "Name": "label",
+          "Value": "css/battle.css"
+        }
+      ]
+    },
+    {
       "Route": "css/battle.css",
       "AssetFile": "css/battle.css",
       "Selectors": [],
@@ -263,7 +308,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "601"
+          "Value": "784"
         },
         {
           "Name": "Content-Type",
@@ -271,62 +316,17 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"W8nYw6OH4fIQAbxtxAWTpbGESQWJEQUt6aUADW9eyR0=\""
+          "Value": "\"qW1Wl0e2xPfr8IsoIHTrcI/IU0PKGdSe3+lRA+8zD4U=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 07:49:25 GMT"
+          "Value": "Fri, 20 Dec 2024 01:23:50 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-W8nYw6OH4fIQAbxtxAWTpbGESQWJEQUt6aUADW9eyR0="
-        }
-      ]
-    },
-    {
-      "Route": "css/battle.np81j19nf2.css",
-      "AssetFile": "css/battle.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "601"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"W8nYw6OH4fIQAbxtxAWTpbGESQWJEQUt6aUADW9eyR0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 07:49:25 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "np81j19nf2"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-W8nYw6OH4fIQAbxtxAWTpbGESQWJEQUt6aUADW9eyR0="
-        },
-        {
-          "Name": "label",
-          "Value": "css/battle.css"
+          "Value": "sha256-qW1Wl0e2xPfr8IsoIHTrcI/IU0PKGdSe3+lRA+8zD4U="
         }
       ]
     },
@@ -659,51 +659,6 @@
       ]
     },
     {
-      "Route": "js/battle.aoy9ad1kpk.js",
-      "AssetFile": "js/battle.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "5916"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"ysXWJS9dz8J5Xi0FCuh/WLyXPSQNCkILBsShVy8kQtI=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 07:15:43 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "aoy9ad1kpk"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-ysXWJS9dz8J5Xi0FCuh/WLyXPSQNCkILBsShVy8kQtI="
-        },
-        {
-          "Name": "label",
-          "Value": "js/battle.js"
-        }
-      ]
-    },
-    {
       "Route": "js/battle.js",
       "AssetFile": "js/battle.js",
       "Selectors": [],
@@ -718,7 +673,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5916"
+          "Value": "7530"
         },
         {
           "Name": "Content-Type",
@@ -726,17 +681,62 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"ysXWJS9dz8J5Xi0FCuh/WLyXPSQNCkILBsShVy8kQtI=\""
+          "Value": "\"Kgn/cPzRp+BSGk0BDYTW7Jjochb2NVMIfiM4QuDatzw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 07:15:43 GMT"
+          "Value": "Fri, 20 Dec 2024 01:44:38 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-ysXWJS9dz8J5Xi0FCuh/WLyXPSQNCkILBsShVy8kQtI="
+          "Value": "sha256-Kgn/cPzRp+BSGk0BDYTW7Jjochb2NVMIfiM4QuDatzw="
+        }
+      ]
+    },
+    {
+      "Route": "js/battle.qselzy8i8l.js",
+      "AssetFile": "js/battle.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7530"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Kgn/cPzRp+BSGk0BDYTW7Jjochb2NVMIfiM4QuDatzw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 20 Dec 2024 01:44:38 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qselzy8i8l"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Kgn/cPzRp+BSGk0BDYTW7Jjochb2NVMIfiM4QuDatzw="
+        },
+        {
+          "Name": "label",
+          "Value": "js/battle.js"
         }
       ]
     },

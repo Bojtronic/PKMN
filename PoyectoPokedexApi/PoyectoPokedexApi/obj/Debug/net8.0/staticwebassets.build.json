@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "cwmLQFqDuZrCvQ1Bukk7awMfqjZeh8edmwSZuvF/sSE=",
+  "Hash": "J37gudoOloXVwqxgqt/OYn+VeY+PkM4dGlXOhN9gZ1g=",
   "Source": "PoyectoPokedexApi",
   "BasePath": "_content/PoyectoPokedexApi",
   "Mode": "Default",
@@ -115,8 +115,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "np81j19nf2",
-      "Integrity": "W8nYw6OH4fIQAbxtxAWTpbGESQWJEQUt6aUADW9eyR0=",
+      "Fingerprint": "7cm1v7vay0",
+      "Integrity": "qW1Wl0e2xPfr8IsoIHTrcI/IU0PKGdSe3+lRA+8zD4U=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\battle.css"
@@ -220,8 +220,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "aoy9ad1kpk",
-      "Integrity": "ysXWJS9dz8J5Xi0FCuh/WLyXPSQNCkILBsShVy8kQtI=",
+      "Fingerprint": "qselzy8i8l",
+      "Integrity": "Kgn/cPzRp+BSGk0BDYTW7Jjochb2NVMIfiM4QuDatzw=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\battle.js"
@@ -1611,6 +1611,51 @@
       ]
     },
     {
+      "Route": "css/battle.7cm1v7vay0.css",
+      "AssetFile": "C:\\Users\\Manuel\\Documents\\Brete\\JuanPa\\PROY_U\\repo\\PKMN\\PoyectoPokedexApi\\PoyectoPokedexApi\\wwwroot\\css\\battle.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "784"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qW1Wl0e2xPfr8IsoIHTrcI/IU0PKGdSe3+lRA+8zD4U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 20 Dec 2024 01:23:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7cm1v7vay0"
+        },
+        {
+          "Name": "label",
+          "Value": "css/battle.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-qW1Wl0e2xPfr8IsoIHTrcI/IU0PKGdSe3+lRA+8zD4U="
+        }
+      ]
+    },
+    {
       "Route": "css/battle.css",
       "AssetFile": "C:\\Users\\Manuel\\Documents\\Brete\\JuanPa\\PROY_U\\repo\\PKMN\\PoyectoPokedexApi\\PoyectoPokedexApi\\wwwroot\\css\\battle.css",
       "Selectors": [],
@@ -1621,7 +1666,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "601"
+          "Value": "784"
         },
         {
           "Name": "Content-Type",
@@ -1629,11 +1674,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"W8nYw6OH4fIQAbxtxAWTpbGESQWJEQUt6aUADW9eyR0=\""
+          "Value": "\"qW1Wl0e2xPfr8IsoIHTrcI/IU0PKGdSe3+lRA+8zD4U=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 07:49:25 GMT"
+          "Value": "Fri, 20 Dec 2024 01:23:50 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1643,52 +1688,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-W8nYw6OH4fIQAbxtxAWTpbGESQWJEQUt6aUADW9eyR0="
-        }
-      ]
-    },
-    {
-      "Route": "css/battle.np81j19nf2.css",
-      "AssetFile": "C:\\Users\\Manuel\\Documents\\Brete\\JuanPa\\PROY_U\\repo\\PKMN\\PoyectoPokedexApi\\PoyectoPokedexApi\\wwwroot\\css\\battle.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "601"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"W8nYw6OH4fIQAbxtxAWTpbGESQWJEQUt6aUADW9eyR0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 07:49:25 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "np81j19nf2"
-        },
-        {
-          "Name": "label",
-          "Value": "css/battle.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-W8nYw6OH4fIQAbxtxAWTpbGESQWJEQUt6aUADW9eyR0="
+          "Value": "sha256-qW1Wl0e2xPfr8IsoIHTrcI/IU0PKGdSe3+lRA+8zD4U="
         }
       ]
     },
@@ -2021,51 +2021,6 @@
       ]
     },
     {
-      "Route": "js/battle.aoy9ad1kpk.js",
-      "AssetFile": "C:\\Users\\Manuel\\Documents\\Brete\\JuanPa\\PROY_U\\repo\\PKMN\\PoyectoPokedexApi\\PoyectoPokedexApi\\wwwroot\\js\\battle.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "5916"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"ysXWJS9dz8J5Xi0FCuh/WLyXPSQNCkILBsShVy8kQtI=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 07:15:43 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "aoy9ad1kpk"
-        },
-        {
-          "Name": "label",
-          "Value": "js/battle.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-ysXWJS9dz8J5Xi0FCuh/WLyXPSQNCkILBsShVy8kQtI="
-        }
-      ]
-    },
-    {
       "Route": "js/battle.js",
       "AssetFile": "C:\\Users\\Manuel\\Documents\\Brete\\JuanPa\\PROY_U\\repo\\PKMN\\PoyectoPokedexApi\\PoyectoPokedexApi\\wwwroot\\js\\battle.js",
       "Selectors": [],
@@ -2076,7 +2031,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5916"
+          "Value": "7530"
         },
         {
           "Name": "Content-Type",
@@ -2084,11 +2039,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"ysXWJS9dz8J5Xi0FCuh/WLyXPSQNCkILBsShVy8kQtI=\""
+          "Value": "\"Kgn/cPzRp+BSGk0BDYTW7Jjochb2NVMIfiM4QuDatzw=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 07:15:43 GMT"
+          "Value": "Fri, 20 Dec 2024 01:44:38 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2098,7 +2053,52 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-ysXWJS9dz8J5Xi0FCuh/WLyXPSQNCkILBsShVy8kQtI="
+          "Value": "sha256-Kgn/cPzRp+BSGk0BDYTW7Jjochb2NVMIfiM4QuDatzw="
+        }
+      ]
+    },
+    {
+      "Route": "js/battle.qselzy8i8l.js",
+      "AssetFile": "C:\\Users\\Manuel\\Documents\\Brete\\JuanPa\\PROY_U\\repo\\PKMN\\PoyectoPokedexApi\\PoyectoPokedexApi\\wwwroot\\js\\battle.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7530"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Kgn/cPzRp+BSGk0BDYTW7Jjochb2NVMIfiM4QuDatzw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 20 Dec 2024 01:44:38 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qselzy8i8l"
+        },
+        {
+          "Name": "label",
+          "Value": "js/battle.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Kgn/cPzRp+BSGk0BDYTW7Jjochb2NVMIfiM4QuDatzw="
         }
       ]
     },
