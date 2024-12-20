@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "DXous8YSOW2WmCnkMq03SGa/Z6Hudrla7e0gMpczkGY=",
+  "Hash": "b/UW/snPaGuhEdBf/lNWd/BPBF8lWvXrOOa05RqoUrQ=",
   "Source": "PoyectoPokedexApi",
   "BasePath": "_content/PoyectoPokedexApi",
   "Mode": "Default",
@@ -115,8 +115,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "k1trry1tan",
-      "Integrity": "OCH8o6r9yHqvyP1gN4CbgXucb2LpOsIVL/jQoLP5yB0=",
+      "Fingerprint": "fa5se35i9i",
+      "Integrity": "OWzoOPsZZGDwFUDxvoX08mUkQevvskSsRcAL3OeYGQU=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\battle.css"
@@ -164,27 +164,6 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\Manuel\\Documents\\Brete\\JuanPa\\PROY_U\\repo\\PKMN\\PoyectoPokedexApi\\PoyectoPokedexApi\\wwwroot\\images\\fondo_batalla.jpg",
-      "SourceId": "PoyectoPokedexApi",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Manuel\\Documents\\Brete\\JuanPa\\PROY_U\\repo\\PKMN\\PoyectoPokedexApi\\PoyectoPokedexApi\\wwwroot\\",
-      "BasePath": "_content/PoyectoPokedexApi",
-      "RelativePath": "images/fondo_batalla#[.{fingerprint}]?.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "vdrm35uymy",
-      "Integrity": "I6s45dYbhQw5a6KlzgnbhiP0OrE3G2YDAdFIfG5P+QA=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\fondo_batalla.jpg"
-    },
-    {
       "Identity": "C:\\Users\\Manuel\\Documents\\Brete\\JuanPa\\PROY_U\\repo\\PKMN\\PoyectoPokedexApi\\PoyectoPokedexApi\\wwwroot\\images\\fondo_estadio.jpg",
       "SourceId": "PoyectoPokedexApi",
       "SourceType": "Discovered",
@@ -206,6 +185,27 @@
       "OriginalItemSpec": "wwwroot\\images\\fondo_estadio.jpg"
     },
     {
+      "Identity": "C:\\Users\\Manuel\\Documents\\Brete\\JuanPa\\PROY_U\\repo\\PKMN\\PoyectoPokedexApi\\PoyectoPokedexApi\\wwwroot\\images\\pokeball.png",
+      "SourceId": "PoyectoPokedexApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Manuel\\Documents\\Brete\\JuanPa\\PROY_U\\repo\\PKMN\\PoyectoPokedexApi\\PoyectoPokedexApi\\wwwroot\\",
+      "BasePath": "_content/PoyectoPokedexApi",
+      "RelativePath": "images/pokeball#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "8losdi4lbf",
+      "Integrity": "hF+wvtsH8MWBaqUqSBv2kx5j5oP9fY7lEPJY71JxpbE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\pokeball.png"
+    },
+    {
       "Identity": "C:\\Users\\Manuel\\Documents\\Brete\\JuanPa\\PROY_U\\repo\\PKMN\\PoyectoPokedexApi\\PoyectoPokedexApi\\wwwroot\\js\\battle.js",
       "SourceId": "PoyectoPokedexApi",
       "SourceType": "Discovered",
@@ -220,8 +220,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "q980qw1p10",
-      "Integrity": "Iqz8nF1x/76oExbkxOPepEDTG4CJFXXx5rMnCQY2HZY=",
+      "Fingerprint": "pdaass0jnr",
+      "Integrity": "DZ+Q7ioFg2UIc5SqcfRdZOPBZxYf/IFDbTsBzudR4TY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\battle.js"
@@ -1621,7 +1621,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "712"
+          "Value": "786"
         },
         {
           "Name": "Content-Type",
@@ -1629,11 +1629,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"OCH8o6r9yHqvyP1gN4CbgXucb2LpOsIVL/jQoLP5yB0=\""
+          "Value": "\"OWzoOPsZZGDwFUDxvoX08mUkQevvskSsRcAL3OeYGQU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 03:02:35 GMT"
+          "Value": "Fri, 20 Dec 2024 07:01:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1643,12 +1643,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-OCH8o6r9yHqvyP1gN4CbgXucb2LpOsIVL/jQoLP5yB0="
+          "Value": "sha256-OWzoOPsZZGDwFUDxvoX08mUkQevvskSsRcAL3OeYGQU="
         }
       ]
     },
     {
-      "Route": "css/battle.k1trry1tan.css",
+      "Route": "css/battle.fa5se35i9i.css",
       "AssetFile": "C:\\Users\\Manuel\\Documents\\Brete\\JuanPa\\PROY_U\\repo\\PKMN\\PoyectoPokedexApi\\PoyectoPokedexApi\\wwwroot\\css\\battle.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -1658,7 +1658,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "712"
+          "Value": "786"
         },
         {
           "Name": "Content-Type",
@@ -1666,11 +1666,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"OCH8o6r9yHqvyP1gN4CbgXucb2LpOsIVL/jQoLP5yB0=\""
+          "Value": "\"OWzoOPsZZGDwFUDxvoX08mUkQevvskSsRcAL3OeYGQU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 03:02:35 GMT"
+          "Value": "Fri, 20 Dec 2024 07:01:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1680,7 +1680,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "k1trry1tan"
+          "Value": "fa5se35i9i"
         },
         {
           "Name": "label",
@@ -1688,7 +1688,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-OCH8o6r9yHqvyP1gN4CbgXucb2LpOsIVL/jQoLP5yB0="
+          "Value": "sha256-OWzoOPsZZGDwFUDxvoX08mUkQevvskSsRcAL3OeYGQU="
         }
       ]
     },
@@ -1857,88 +1857,6 @@
       ]
     },
     {
-      "Route": "images/fondo_batalla.jpg",
-      "AssetFile": "C:\\Users\\Manuel\\Documents\\Brete\\JuanPa\\PROY_U\\repo\\PKMN\\PoyectoPokedexApi\\PoyectoPokedexApi\\wwwroot\\images\\fondo_batalla.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "66701"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"I6s45dYbhQw5a6KlzgnbhiP0OrE3G2YDAdFIfG5P+QA=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 07:26:17 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-I6s45dYbhQw5a6KlzgnbhiP0OrE3G2YDAdFIfG5P+QA="
-        }
-      ]
-    },
-    {
-      "Route": "images/fondo_batalla.vdrm35uymy.jpg",
-      "AssetFile": "C:\\Users\\Manuel\\Documents\\Brete\\JuanPa\\PROY_U\\repo\\PKMN\\PoyectoPokedexApi\\PoyectoPokedexApi\\wwwroot\\images\\fondo_batalla.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "66701"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"I6s45dYbhQw5a6KlzgnbhiP0OrE3G2YDAdFIfG5P+QA=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 19 Dec 2024 07:26:17 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "vdrm35uymy"
-        },
-        {
-          "Name": "label",
-          "Value": "images/fondo_batalla.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-I6s45dYbhQw5a6KlzgnbhiP0OrE3G2YDAdFIfG5P+QA="
-        }
-      ]
-    },
-    {
       "Route": "images/fondo_estadio.jpg",
       "AssetFile": "C:\\Users\\Manuel\\Documents\\Brete\\JuanPa\\PROY_U\\repo\\PKMN\\PoyectoPokedexApi\\PoyectoPokedexApi\\wwwroot\\images\\fondo_estadio.jpg",
       "Selectors": [],
@@ -2021,6 +1939,88 @@
       ]
     },
     {
+      "Route": "images/pokeball.8losdi4lbf.png",
+      "AssetFile": "C:\\Users\\Manuel\\Documents\\Brete\\JuanPa\\PROY_U\\repo\\PKMN\\PoyectoPokedexApi\\PoyectoPokedexApi\\wwwroot\\images\\pokeball.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "52984"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hF+wvtsH8MWBaqUqSBv2kx5j5oP9fY7lEPJY71JxpbE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 20 Dec 2024 05:22:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8losdi4lbf"
+        },
+        {
+          "Name": "label",
+          "Value": "images/pokeball.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-hF+wvtsH8MWBaqUqSBv2kx5j5oP9fY7lEPJY71JxpbE="
+        }
+      ]
+    },
+    {
+      "Route": "images/pokeball.png",
+      "AssetFile": "C:\\Users\\Manuel\\Documents\\Brete\\JuanPa\\PROY_U\\repo\\PKMN\\PoyectoPokedexApi\\PoyectoPokedexApi\\wwwroot\\images\\pokeball.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "52984"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hF+wvtsH8MWBaqUqSBv2kx5j5oP9fY7lEPJY71JxpbE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 20 Dec 2024 05:22:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-hF+wvtsH8MWBaqUqSBv2kx5j5oP9fY7lEPJY71JxpbE="
+        }
+      ]
+    },
+    {
       "Route": "js/battle.js",
       "AssetFile": "C:\\Users\\Manuel\\Documents\\Brete\\JuanPa\\PROY_U\\repo\\PKMN\\PoyectoPokedexApi\\PoyectoPokedexApi\\wwwroot\\js\\battle.js",
       "Selectors": [],
@@ -2031,7 +2031,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "7877"
+          "Value": "10968"
         },
         {
           "Name": "Content-Type",
@@ -2039,11 +2039,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Iqz8nF1x/76oExbkxOPepEDTG4CJFXXx5rMnCQY2HZY=\""
+          "Value": "\"DZ+Q7ioFg2UIc5SqcfRdZOPBZxYf/IFDbTsBzudR4TY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 03:41:52 GMT"
+          "Value": "Fri, 20 Dec 2024 08:21:00 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2053,12 +2053,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Iqz8nF1x/76oExbkxOPepEDTG4CJFXXx5rMnCQY2HZY="
+          "Value": "sha256-DZ+Q7ioFg2UIc5SqcfRdZOPBZxYf/IFDbTsBzudR4TY="
         }
       ]
     },
     {
-      "Route": "js/battle.q980qw1p10.js",
+      "Route": "js/battle.pdaass0jnr.js",
       "AssetFile": "C:\\Users\\Manuel\\Documents\\Brete\\JuanPa\\PROY_U\\repo\\PKMN\\PoyectoPokedexApi\\PoyectoPokedexApi\\wwwroot\\js\\battle.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -2068,7 +2068,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "7877"
+          "Value": "10968"
         },
         {
           "Name": "Content-Type",
@@ -2076,11 +2076,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Iqz8nF1x/76oExbkxOPepEDTG4CJFXXx5rMnCQY2HZY=\""
+          "Value": "\"DZ+Q7ioFg2UIc5SqcfRdZOPBZxYf/IFDbTsBzudR4TY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 20 Dec 2024 03:41:52 GMT"
+          "Value": "Fri, 20 Dec 2024 08:21:00 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2090,7 +2090,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "q980qw1p10"
+          "Value": "pdaass0jnr"
         },
         {
           "Name": "label",
@@ -2098,7 +2098,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-Iqz8nF1x/76oExbkxOPepEDTG4CJFXXx5rMnCQY2HZY="
+          "Value": "sha256-DZ+Q7ioFg2UIc5SqcfRdZOPBZxYf/IFDbTsBzudR4TY="
         }
       ]
     },

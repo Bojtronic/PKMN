@@ -27,14 +27,14 @@
     <StaticWebAssetEndpoint Include="_content/PoyectoPokedexApi/css/battle.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\battle.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-OCH8o6r9yHqvyP1gN4CbgXucb2LpOsIVL/jQoLP5yB0="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"712"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022OCH8o6r9yHqvyP1gN4CbgXucb2LpOsIVL/jQoLP5yB0=\u0022"},{"Name":"Last-Modified","Value":"Fri, 20 Dec 2024 03:02:35 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-OWzoOPsZZGDwFUDxvoX08mUkQevvskSsRcAL3OeYGQU="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"786"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022OWzoOPsZZGDwFUDxvoX08mUkQevvskSsRcAL3OeYGQU=\u0022"},{"Name":"Last-Modified","Value":"Fri, 20 Dec 2024 07:01:42 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/PoyectoPokedexApi/css/battle.k1trry1tan.css">
+    <StaticWebAssetEndpoint Include="_content/PoyectoPokedexApi/css/battle.fa5se35i9i.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\battle.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"k1trry1tan"},{"Name":"integrity","Value":"sha256-OCH8o6r9yHqvyP1gN4CbgXucb2LpOsIVL/jQoLP5yB0="},{"Name":"label","Value":"_content/PoyectoPokedexApi/css/battle.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"712"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022OCH8o6r9yHqvyP1gN4CbgXucb2LpOsIVL/jQoLP5yB0=\u0022"},{"Name":"Last-Modified","Value":"Fri, 20 Dec 2024 03:02:35 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"fa5se35i9i"},{"Name":"integrity","Value":"sha256-OWzoOPsZZGDwFUDxvoX08mUkQevvskSsRcAL3OeYGQU="},{"Name":"label","Value":"_content/PoyectoPokedexApi/css/battle.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"786"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022OWzoOPsZZGDwFUDxvoX08mUkQevvskSsRcAL3OeYGQU=\u0022"},{"Name":"Last-Modified","Value":"Fri, 20 Dec 2024 07:01:42 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/PoyectoPokedexApi/css/site.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>
@@ -60,18 +60,6 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Jtxf9L\u002B5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"5430"},{"Name":"Content-Type","Value":"image/x-icon"},{"Name":"ETag","Value":"\u0022Jtxf9L\u002B5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM=\u0022"},{"Name":"Last-Modified","Value":"Tue, 10 Dec 2024 02:11:37 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/PoyectoPokedexApi/images/fondo_batalla.jpg">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\fondo_batalla.jpg'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-I6s45dYbhQw5a6KlzgnbhiP0OrE3G2YDAdFIfG5P\u002BQA="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"66701"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022I6s45dYbhQw5a6KlzgnbhiP0OrE3G2YDAdFIfG5P\u002BQA=\u0022"},{"Name":"Last-Modified","Value":"Thu, 19 Dec 2024 07:26:17 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/PoyectoPokedexApi/images/fondo_batalla.vdrm35uymy.jpg">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\fondo_batalla.jpg'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"vdrm35uymy"},{"Name":"integrity","Value":"sha256-I6s45dYbhQw5a6KlzgnbhiP0OrE3G2YDAdFIfG5P\u002BQA="},{"Name":"label","Value":"_content/PoyectoPokedexApi/images/fondo_batalla.jpg"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"66701"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022I6s45dYbhQw5a6KlzgnbhiP0OrE3G2YDAdFIfG5P\u002BQA=\u0022"},{"Name":"Last-Modified","Value":"Thu, 19 Dec 2024 07:26:17 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/PoyectoPokedexApi/images/fondo_estadio.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\fondo_estadio.jpg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
@@ -84,17 +72,29 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"y4w3qmpgtn"},{"Name":"integrity","Value":"sha256-csdMsW7iDIhqROBvkFl8e84wxOaKuDMI4W/sKCkspWI="},{"Name":"label","Value":"_content/PoyectoPokedexApi/images/fondo_estadio.jpg"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"256479"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022csdMsW7iDIhqROBvkFl8e84wxOaKuDMI4W/sKCkspWI=\u0022"},{"Name":"Last-Modified","Value":"Thu, 19 Dec 2024 07:33:53 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/PoyectoPokedexApi/images/pokeball.8losdi4lbf.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\pokeball.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"8losdi4lbf"},{"Name":"integrity","Value":"sha256-hF\u002BwvtsH8MWBaqUqSBv2kx5j5oP9fY7lEPJY71JxpbE="},{"Name":"label","Value":"_content/PoyectoPokedexApi/images/pokeball.png"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"52984"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022hF\u002BwvtsH8MWBaqUqSBv2kx5j5oP9fY7lEPJY71JxpbE=\u0022"},{"Name":"Last-Modified","Value":"Fri, 20 Dec 2024 05:22:28 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/PoyectoPokedexApi/images/pokeball.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\pokeball.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-hF\u002BwvtsH8MWBaqUqSBv2kx5j5oP9fY7lEPJY71JxpbE="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"52984"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022hF\u002BwvtsH8MWBaqUqSBv2kx5j5oP9fY7lEPJY71JxpbE=\u0022"},{"Name":"Last-Modified","Value":"Fri, 20 Dec 2024 05:22:28 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/PoyectoPokedexApi/js/battle.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\battle.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Iqz8nF1x/76oExbkxOPepEDTG4CJFXXx5rMnCQY2HZY="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"7877"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022Iqz8nF1x/76oExbkxOPepEDTG4CJFXXx5rMnCQY2HZY=\u0022"},{"Name":"Last-Modified","Value":"Fri, 20 Dec 2024 03:41:52 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-DZ\u002BQ7ioFg2UIc5SqcfRdZOPBZxYf/IFDbTsBzudR4TY="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"10968"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022DZ\u002BQ7ioFg2UIc5SqcfRdZOPBZxYf/IFDbTsBzudR4TY=\u0022"},{"Name":"Last-Modified","Value":"Fri, 20 Dec 2024 08:21:00 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/PoyectoPokedexApi/js/battle.q980qw1p10.js">
+    <StaticWebAssetEndpoint Include="_content/PoyectoPokedexApi/js/battle.pdaass0jnr.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\battle.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"q980qw1p10"},{"Name":"integrity","Value":"sha256-Iqz8nF1x/76oExbkxOPepEDTG4CJFXXx5rMnCQY2HZY="},{"Name":"label","Value":"_content/PoyectoPokedexApi/js/battle.js"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"7877"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022Iqz8nF1x/76oExbkxOPepEDTG4CJFXXx5rMnCQY2HZY=\u0022"},{"Name":"Last-Modified","Value":"Fri, 20 Dec 2024 03:41:52 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"pdaass0jnr"},{"Name":"integrity","Value":"sha256-DZ\u002BQ7ioFg2UIc5SqcfRdZOPBZxYf/IFDbTsBzudR4TY="},{"Name":"label","Value":"_content/PoyectoPokedexApi/js/battle.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"10968"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022DZ\u002BQ7ioFg2UIc5SqcfRdZOPBZxYf/IFDbTsBzudR4TY=\u0022"},{"Name":"Last-Modified","Value":"Fri, 20 Dec 2024 08:21:00 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/PoyectoPokedexApi/js/site.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))</AssetFile>

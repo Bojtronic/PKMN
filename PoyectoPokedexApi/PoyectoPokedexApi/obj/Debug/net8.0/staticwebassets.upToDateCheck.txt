@@ -3,8 +3,8 @@ wwwroot\css\admin.css
 wwwroot\css\battle.css
 wwwroot\css\site.css
 wwwroot\favicon.ico
-wwwroot\images\fondo_batalla.jpg
 wwwroot\images\fondo_estadio.jpg
+wwwroot\images\pokeball.png
 wwwroot\js\battle.js
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css

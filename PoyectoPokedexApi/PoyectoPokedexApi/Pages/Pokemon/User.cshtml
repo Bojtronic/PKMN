@@ -43,10 +43,6 @@
                                         <td>@pkm.name</td>
                                         <td>@pkm.estado</td>
                                         <td>
-                                            <form method="post" asp-page-handler="AsignarPoketPokemon">
-                                                <input type="hidden" name="pokemonId" value="@pkm.id" />
-                                                <button type="submit" class="btn btn-success">Agregar</button>
-                                            </form>
                                             <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#reemplazarPokemonModal" onclick="setPokemonIdForReemplazo(@pkm.id)">Reemplazar</button>
                                         </td>
                                     </tr>
